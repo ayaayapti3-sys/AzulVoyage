@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azul Voyage</title>
+    <link rel="icon" href="images/azul.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-logo">
+            <a href="index.html" class="logo"><img src="images/azul.png" width="55px" height="55px" alt="azulVoyage"></a>
+        </div>
+        
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" data-i18n="nav.home">Accueil</a>
+            <a href="exploreMaroc.html" data-i18n="nav.explore">Découvrir le Maroc</a>
+            <a href="transport.html" data-i18n="nav.transport">Transport</a>
+            <a href="package.html" data-i18n="nav.packages">Tours & Packages</a>
+            <a href="contact.html" data-i18n="nav.about">À propos</a>
+        </nav>
+
+        <a href="reserver.html" class="nav-btn" data-i18n="nav.book">Réserver</a>
+             <button class="lang-toggle" id="langToggle">
+            EN
+        </button>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    </header>
+
+    <section class="exploreMaroc motion-section">
+
+        <div class="explore-content">
+            <span class="explore-label" data-i18n="explore.label">Découvrir le Maroc</span>
+
+            <h1 data-i18n="explore.title">
+                Explorez le
+                Maroc
+                Autrement
+            </h1>
+
+            <p class="desc" style="padding: 20px 0;" data-i18n="explore.desc">
+                Des villes impériales aux paysages désertiques, découvrez les lieux,
+                les saveurs et les traditions qui rendent le Maroc inoubliable.
+            </p>
+
+          <div class="explore-actions">
+                <a href="#subnav" class="btn-primaryE" data-i18n="explore.btn_start">
+                    Commencer l'exploration ↓
+                </a>
+
+                <a href="package.html" class="btn-secondaryG" data-i18n="explore.btn_guide">
+                    →   Découvrir nos circuits
+                </a>
+            </div>
+        </div>
+
+        <div class="explore-img">
+            <img src="images/morocco.png" alt="Découvrir le Maroc">
+
+            <div class="small-cardM top-card">
+                <div class="pin">⌖</div>
+                <div>
+                    <strong>Chefchaouen</strong>
+                    <small data-i18n="explore.card_chef">Ville bleue du Maroc</small>
+                </div>
+            </div>
+
+            <div class="small-cardM bottom-card">
+                <div class="pin">⌖</div>
+                <div>
+                    <strong>Aït Ben Haddou</strong>
+                    <small>Kasbah • UNESCO</small>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="explore-subnav">
+        <a href="exploreMaroc.html" class="subnav active" onclick="showDTab('villes',this)" data-i18n="explore.subnav_villes">Villes &amp; Sites</a>
+        <a href="culture.html" class="subnav" data-i18n="explore.subnav_culture">Culture &amp; Coutumes</a>
+        <a href="guastronomie.html" class="subnav" data-i18n="explore.subnav_gastro">Gastronomie</a>
+        <a href="quandPartir.html" class="subnav" data-i18n="explore.subnav_quand">Quand partir</a>
+    </div>
+
+    <section class="culture-section motion-section">
+        <div class="culture-container">
+            <div class="culture-top">
+                <div class="when-title">
+                    <div class="explore-label">
+                        <span data-i18n="culture.label">Culture & Coutumes</span>
+                    </div>
+
+                    <h2 data-i18n="culture.title">
+                        Comprendre & Respecter le Maroc
+                    </h2>
+                    <p class="desc" data-i18n="culture.desc">Quelques clés culturelles pour voyager avec sens, ouverture et bienveillance.</p>
+                </div>
+            </div>
+
+            <div class="culture-flex">
+
+                <article class="culture-card img-religion"
+                    style="--img:url('https://images.unsplash.com/photo-1548013146-72479768bada?w=900&amp;q=80')">
+
+                    <div class="card__inner">
+                        <span class="card__icon"><i class="ti ti-building-mosque"></i></span>
+                        <h3 class="card__title" data-i18n="culture.religion_title">Religion &amp; Respect</h3>
+                        <span class="card__rule"></span>
+                        <p class="card__desc" data-culture="religion" data-i18n="culture.religion_desc">    Respect des lieux
+    et tenue modeste.</p>
+                    </div>
+                </article>
+
+
+                <article class="culture-card card--navy img-vest"
+                    style="--img:url('https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=900&amp;q=80')">
+
+                    <div class="card__inner">
+                        <span class="card__icon"><i class="ti ti-shirt"></i></span>
+                        <h3 class="card__title card__titleVet" data-i18n="culture.dress_title">Code vestimentaire</h3>
+                        <span class="card__rule"></span>
+                        <p class="card__desc card__descVet" data-i18n="culture.dress_desc">    Tenue discrète
+    partout recommandée.</p>
+                    </div>
+                </article>
+
+
+
+
+                <article class="culture-card img-hosp"
+                    style="--img:url('https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=900&amp;q=80')">
+
+                    <div class="card__inner">
+                        <span class="card__icon"><i class="ti ti-teapot"></i></span>
+                        <h3 class="card__title" data-i18n="culture.hosp_title">Hospitalité marocaine</h3>
+                        <span class="card__rule"></span>
+                        <p class="card__desc" data-culture="atay" data-i18n="culture.hosp_desc">Le thé et l'accueil font partie de l'expérience.</p>
+                    </div>
+                </article>
+
+
+                <article class="culture-card img-ramd"
+                    style="--img:url('https://images.unsplash.com/photo-1518544801976-3e159e50e5bb?w=900&amp;q=80')">
+
+                    <div class="card__inner">
+                        <span class="card__icon"><i class="ti ti-moon-stars"></i></span>
+                        <h3 class="card__title" data-i18n="culture.ramadan_title">Le Ramadan</h3>
+                        <span class="card__rule"></span>
+                        <p class="card__desc" data-culture="ramadan" data-i18n="culture.ramadan_desc">Une période où la ville s'anime le soir.</p>
+                    </div>
+                </article>
+
+
+
+                <article class="culture-card img-mus"
+                    style="--img:url('https://images.unsplash.com/photo-1511735111819-9a3f7709049c?w=900&amp;q=80')">
+
+                    <div class="card__inner">
+                        <span class="card__icon"><i class="ti ti-music"></i></span>
+                        <h3 class="card__title" data-i18n="culture.music_title">Musique &amp; Fêtes</h3>
+                        <span class="card__rule"></span>
+                        <p class="card__desc" data-culture="music" data-i18n="culture.music_desc">Des festivals et une musique authentique.</p>
+                    </div>
+                </article>
+
+                <article class="culture-card img-parl"
+                    style="--img:url('https://images.unsplash.com/photo-1597217012460-4f7c4d2c8b3e?w=900&amp;q=80')">
+
+                    <div class="card__inner">
+                        <span class="card__icon"><i class="ti ti-messages"></i></span>
+                        <h3 class="card__title" data-i18n="culture.lang_title">Langues parlées</h3>
+                        <span class="card__rule"></span>
+                        <p class="card__desc" data-culture="langue" data-i18n="culture.lang_desc">Darija, Tamazight, Arabe et Français..</p>
+                    </div>
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="gastro-cta motion-section">
+        <div class="cta-container">
+
+            <div class="cta-label">
+                <span></span>
+                <p data-i18n="culture_cta.label">PRÊT À DÉCOUVRIR L'ÂME DU MAROC ?</p>
+                <span></span>
+            </div>
+
+            <h2 data-i18n="culture_cta.title">
+                Comprenez le Maroc au-delà des paysages,
+                à travers ses traditions, son hospitalité
+                et ses gestes du quotidien.
+            </h2>
+
+            <a href="reserver.html" class="cta-btn" data-i18n="cta.btn">
+                Planifier mon voyage →
+            </a>
+
+        </div>
+    </section>
+
+ 
+    <footer class="footer">
+
+        <div class="footer-col footer-brand">
+            <div class="footer-logo">
+                <img src="images/azul.png" width="75px" height="75px" alt="azulVoyage">
+            </div>
+            <span class="footer-label" data-i18n="footer.slogan">Votre partenaire pour découvrir le Maroc autrement.</span>
+            <p class="footer-label" data-i18n="footer.desc">Tours & transport marocain premium.</p>
+            <div class="note-tag small" data-i18n="footer.note">Votre aventure commence ici</div>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-i18n="footer.explore_title">Explorer</h4>
+            <ul>
+                <li><a href="exploreMaroc.html" data-i18n="footer.explore_maroc">Découvrir le Maroc</a></li>
+                <li><a href="transport.html" data-i18n="footer.explore_transport">Transport</a></li>
+                <li><a href="package.html" data-i18n="footer.explore_packages">Tours & Packages</a></li>
+                <li><a href="contact.html" data-i18n="footer.explore_about">À propos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-i18n="footer.services_title">Services</h4>
+            <ul>
+                <li><a href="#" data-i18n="footer.services_airport">Transfert Aéroport</a></li>
+                <li><a href="#" data-i18n="footer.services_driver">Chauffeur Privé</a></li>
+                <li><a href="#" data-i18n="footer.services_desert">Tours Désert</a></li>
+                <li><a href="#" data-i18n="footer.services_booking">Réservations</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+            <h4 data-i18n="footer.newsletter_title">Newsletter</h4>
+            <p data-i18n="footer.newsletter_desc">Routes saisonnières & offres.</p>
+            <form action="https://formspree.io/f/{form_id}" method="post" class="newsletter-form">
+                <input type="email" placeholder="votre@email" data-i18n-placeholder="footer.newsletter_placeholder">
+                <button class="button" data-i18n="footer.newsletter_btn">Rejoindre</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"><i class="ti ti-brand-instagram"></i></a>
+                <a href="#"><i class="ti ti-brand-facebook"></i></a>
+                <a href="#"><i class="ti ti-brand-youtube"></i></a>
+                <a href="#"><i class="ti ti-brand-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="action">
+
+
+            <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+                <symbol id="icon-arrow-up-hand" viewBox="0 0 512 512">
+                    <g fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M214 384
+               L214 184
+               L164 184
+               L256 80
+               L348 184
+               L298 184
+               L298 384
+               Q298 402 284 408
+               L236 416
+               Q220 414 214 384 Z" />
+                        <path d="M228 408 L242 434" />
+                        <path d="M258 406 L270 430" />
+                        <path d="M286 404 L296 424" />
+                        <path d="M186 210 L174 186" />
+                        <path d="M206 210 L196 186" />
+                        <path d="M224 210 L216 186" />
+                        <path d="M308 210 L320 190" />
+                        <path d="M326 210 L336 196" />
+                        <path d="M340 210 L346 200" />
+                    </g>
+                </symbol>
+            </svg>
+            <a href="#top" class="float-btn whatsapp"><svg class="arrow-icon">
+                    <use href="#icon-arrow-up-hand"></use>
+                </svg>
+            </a>
+
+            <a href="#" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="50px" height="50px"
+                    class="float-btn whatsapp whtsp-color"></a>
+
+        </div>
+    </footer>
+
+
+    
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        if (!menuToggle || !navLinks) return;
+
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+            menuToggle.classList.toggle("active");
+        });
+
+        navLinks.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("active");
+                menuToggle.classList.remove("active");
+            });
+        });
+    });
+</script>
+
+
+ <script src="script.js" defer></script>
+<script type="module" src="motion-animations.js"></script>
+<script src="js/i18n.js" defer></script>
+
+</body>
+
+</html>

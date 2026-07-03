@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Morocco</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+
+<body id="top">
+
+        <header class="navbar">
+    <div class="nav-logo">
+        <a href="index-en.html" class="logo"><img src="images/azul.png" width="55px" height="55px"
+                alt="azulVoyage"></a>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="index-en.html">Home</a>
+        <a href="exploreMaroc-en.html">Discover Morocco</a>
+        <a href="transport-en.html">Transport</a>
+        <a href="package-en.html">Tours & Packages</a>
+        <a href="contact-en.html">About</a>
+    </nav>
+
+    <a href="reserver-en.html" class="nav-btn">Book Now</a>
+
+    <button class="lang-toggle" id="langToggle">
+        FR
+    </button>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+<section class="exploreMaroc motion-section">
+
+    <div class="explore-content">
+        <span class="explore-label">Discover Morocco</span>
+
+        <h1>
+            Explore <br>
+            Morocco
+            <em>Differently</em>
+        </h1>
+
+        <p class="desc" style="padding: 20px 0;">
+            From imperial cities to desert landscapes, discover the places,
+            flavors and traditions that make Morocco unforgettable.
+        </p>
+
+        <div class="explore-actions">
+            <a href="exploreMaroc-en.html" class="btn-primaryE">
+                Start exploring <span>→</span>
+            </a>
+
+            <a href="#" class="btn-secondaryG">
+                <span id="dsec-villes">↓</span> Browse the guide
+            </a>
+        </div>
+    </div>
+
+    <div class="explore-img">
+        <img src="images/morocco.png" alt="Discover Morocco">
+
+        <div class="small-cardM top-card">
+            <div class="pin">⌖</div>
+            <div>
+                <strong>Chefchaouen</strong>
+                <small>Morocco’s blue city</small>
+            </div>
+        </div>
+
+        <div class="small-cardM bottom-card">
+            <div class="pin">⌖</div>
+            <div>
+                <strong>Aït Ben Haddou</strong>
+                <small>Kasbah • UNESCO</small>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<div class="explore-subnav">
+    <a href="exploreMaroc-en.html" class="subnav active" onclick="showDTab('villes',this)">Cities &amp; Sites</a>
+    <a href="culture-en.html" class="subnav">Culture &amp; Customs</a>
+    <a href="guastronomie-en.html" class="subnav">Gastronomy</a>
+    <a href="quandPartir-en.html" class="subnav">When to go</a>
+</div>
+
+<section class="culture-section motion-section">
+    <div class="culture-container">
+        <div class="culture-top">
+            <div class="when-title">
+                <div class="explore-label">
+                    <span>Culture & Customs</span>
+                </div>
+
+                <h2>
+                    Understand & Respect Morocco
+                </h2>
+                <p class="desc">A few cultural keys to travel with awareness, openness and kindness.</p>
+            </div>
+        </div>
+
+        <div class="culture-flex">
+
+            <article class="culture-card img-religion"
+                style="--img:url('https://images.unsplash.com/photo-1548013146-72479768bada?w=900&amp;q=80')">
+
+                <div class="card__inner">
+                    <span class="card__icon"><i class="ti ti-building-mosque"></i></span>
+                    <h3 class="card__title">Religion &amp; Respect</h3>
+                    <span class="card__rule"></span>
+                    <p class="card__desc" data-culture="religion">Respect sacred places<br>
+                        and dress modestly.</p>
+                </div>
+            </article>
+
+            <article class="culture-card card--navy img-vest"
+                style="--img:url('https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=900&amp;q=80')">
+
+                <div class="card__inner">
+                    <span class="card__icon"><i class="ti ti-shirt"></i></span>
+                    <h3 class="card__title card__titleVet">Dress code</h3>
+                    <span class="card__rule"></span>
+                    <p class="card__desc card__descVet">Discreet clothing is<br>
+                        recommended everywhere.</p>
+                </div>
+            </article>
+
+            <article class="culture-card img-hosp"
+                style="--img:url('https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=900&amp;q=80')">
+
+                <div class="card__inner">
+                    <span class="card__icon"><i class="ti ti-teapot"></i></span>
+                    <h3 class="card__title">Moroccan hospitality</h3>
+                    <span class="card__rule"></span>
+                    <p class="card__desc" data-culture="atay">Tea and warm welcomes are part of the experience.</p>
+                </div>
+            </article>
+
+            <article class="culture-card img-ramd"
+                style="--img:url('https://images.unsplash.com/photo-1518544801976-3e159e50e5bb?w=900&amp;q=80')">
+
+                <div class="card__inner">
+                    <span class="card__icon"><i class="ti ti-moon-stars"></i></span>
+                    <h3 class="card__title">Ramadan</h3>
+                    <span class="card__rule"></span>
+                    <p class="card__desc" data-culture="ramadan">A time when the city comes alive at night.</p>
+                </div>
+            </article>
+
+            <article class="culture-card img-mus"
+                style="--img:url('https://images.unsplash.com/photo-1511735111819-9a3f7709049c?w=900&amp;q=80')">
+
+                <div class="card__inner">
+                    <span class="card__icon"><i class="ti ti-music"></i></span>
+                    <h3 class="card__title">Music &amp; Festivals</h3>
+                    <span class="card__rule"></span>
+                    <p class="card__desc" data-culture="music">Festivals and authentic music traditions.</p>
+                </div>
+            </article>
+
+            <article class="culture-card img-parl"
+                style="--img:url('https://images.unsplash.com/photo-1597217012460-4f7c4d2c8b3e?w=900&amp;q=80')">
+
+                <div class="card__inner">
+                    <span class="card__icon"><i class="ti ti-messages"></i></span>
+                    <h3 class="card__title">Spoken languages</h3>
+                    <span class="card__rule"></span>
+                    <p class="card__desc" data-culture="langue">Darija, Tamazight, Arabic and French.</p>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="gastro-cta motion-section">
+    <div class="cta-container">
+
+        <div class="cta-label">
+            <span></span>
+            <p>READY TO DISCOVER THE SOUL OF MOROCCO?</p>
+            <span></span>
+        </div>
+
+        <h2>
+            Understand Morocco beyond its landscapes, <br>
+            through its traditions, hospitality <br>
+            and everyday gestures.
+        </h2>
+
+        <a href="reserver-en.html" class="cta-btn">
+            Plan my trip
+            <span>→</span>
+        </a>
+
+    </div>
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-col footer-brand">
+        <div class="footer-logo">
+            <img src="images/azul.png" width="75px" height="75px" alt="azulVoyage">
+        </div>
+        <span class="footer-label">Your partner for discovering Morocco differently.</span>
+        <p class="footer-label">Premium Moroccan tours & transport.</p>
+        <div class="note-tag small">Your adventure starts here</div>
+    </div>
+
+    <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+            <li><a href="exploreMaroc-en.html">Discover Morocco</a></li>
+            <li><a href="transport-en.html">Transport</a></li>
+            <li><a href="package-en.html">Tours & Packages</a></li>
+            <li><a href="contact-en.html">About</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+            <li><a href="#">Airport Transfer</a></li>
+            <li><a href="#">Private Driver</a></li>
+            <li><a href="#">Desert Tours</a></li>
+            <li><a href="#">Bookings</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Seasonal routes & offers.</p>
+        <form action="https://formspree.io/f/{form_id}" method="post" class="newsletter-form">
+            <input type="email" placeholder="your@email">
+            <button class="button">Join</button>
+        </form>
+        <div class="social-icons">
+            <a href="#"><i class="ti ti-brand-instagram"></i></a>
+            <a href="#"><i class="ti ti-brand-facebook"></i></a>
+            <a href="#"><i class="ti ti-brand-youtube"></i></a>
+            <a href="#"><i class="ti ti-brand-linkedin"></i></a>
+        </div>
+    </div>
+
+    <div class="action">
+
+        <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+            <symbol id="icon-arrow-up-hand" viewBox="0 0 512 512">
+                <g fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M214 384
+           L214 184
+           L164 184
+           L256 80
+           L348 184
+           L298 184
+           L298 384
+           Q298 402 284 408
+           L236 416
+           Q220 414 214 384 Z" />
+
+                    <path d="M228 408 L242 434" />
+                    <path d="M258 406 L270 430" />
+                    <path d="M286 404 L296 424" />
+
+                    <path d="M186 210 L174 186" />
+                    <path d="M206 210 L196 186" />
+                    <path d="M224 210 L216 186" />
+
+                    <path d="M308 210 L320 190" />
+                    <path d="M326 210 L336 196" />
+                    <path d="M340 210 L346 200" />
+                </g>
+            </symbol>
+        </svg>
+
+        <a href="#top" class="float-btn whatsapp"><svg class="arrow-icon">
+                <use href="#icon-arrow-up-hand"></use>
+            </svg>
+        </a>
+
+        <a href="#" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="50px" height="50px"
+                class="float-btn whatsapp whtsp-color"></a>
+
+    </div>
+</footer>
+
+
+    <script src="script.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".testSwiper", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: { slidesPerView: 1 },
+                700: { slidesPerView: 2 },
+                1000: { slidesPerView: 3 }
+            }
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menuToggle");
+            const navLinks = document.getElementById("navLinks");
+
+            if (!menuToggle || !navLinks) return;
+
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+                menuToggle.classList.toggle("active");
+            });
+
+            navLinks.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    navLinks.classList.remove("active");
+                    menuToggle.classList.remove("active");
+                });
+            });
+        });
+    </script>
+
+
+
+    <script type="module" src="motion-animations.js"></script>
+    <script src="loader.js"></script>
+    <script src="script.js" defer></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azul Voyage</title>
+    <link rel="icon" href="images/azul.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+</head>
+
+<body id="top">
+    <header class="navbar">
+        <div class="nav-logo">
+            <a href="index.html" class="logo"><img src="images/azul.png" width="55px" height="55px"
+                    alt="azulVoyage"></a>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" data-i18n="nav.home">Accueil</a>
+            <a href="exploreMaroc.html" data-i18n="nav.explore">Découvrir le Maroc</a>
+            <a href="transport.html" data-i18n="nav.transport">Transport</a>
+            <a href="package.html" data-i18n="nav.packages">Tours & Packages</a>
+            <a href="contact.html" data-i18n="nav.about">À propos</a>
+        </nav>
+
+        <a href="reserver.html" class="nav-btn" data-i18n="nav.book">Réserver</a>
+
+        <button class="lang-toggle" id="langToggle">
+            EN
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <section class="exploreMaroc motion-section">
+
+        <div class="explore-content">
+            <span class="explore-label" data-i18n="explore.label">Découvrir le Maroc</span>
+
+            <h1 data-i18n="explore.title">
+                Explorez le
+                Maroc
+                Autrement
+            </h1>
+
+            <p class="desc" style="padding: 20px 0;" data-i18n="explore.desc">
+                Des villes impériales aux paysages désertiques, découvrez les lieux,
+                les saveurs et les traditions qui rendent le Maroc inoubliable.
+            </p>
+            <div class="explore-actions">
+                <a href="#subnav" class="btn-primaryE" data-i18n="explore.btn_start">
+                    Commencer l'exploration ↓
+                </a>
+
+                <a href="package.html" class="btn-secondaryG" data-i18n="explore.btn_guide">
+                    → Découvrir nos circuits
+                </a>
+            </div>
+        </div>
+
+        <div class="explore-img">
+            <img src="images/morocco.png" alt="Découvrir le Maroc">
+
+            <div class="small-cardM top-card">
+                <div class="pin">⌖</div>
+                <div>
+                    <strong>Chefchaouen</strong>
+                    <small data-i18n="explore.card_chef">Ville bleue du Maroc</small>
+                </div>
+            </div>
+
+            <div class="small-cardM bottom-card">
+                <div class="pin">⌖</div>
+                <div>
+                    <strong>Aït Ben Haddou</strong>
+                    <small>Kasbah • UNESCO</small>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="explore-subnav">
+        <a href="exploreMaroc.html" class="subnav active" onclick="showDTab('villes',this)"
+            data-i18n="explore.subnav_villes">Villes &amp; Sites</a>
+        <a href="culture.html" class="subnav" onclick="showDTab('culture',this)"
+            data-i18n="explore.subnav_culture">Culture &amp; Coutumes</a>
+        <a href="guastronomie.html" class="subnav" data-i18n="explore.subnav_gastro">Gastronomie</a>
+        <a href="quandPartir.html" class="subnav" data-i18n="explore.subnav_quand">Quand partir</a>
+    </div>
+
+    <section class="when-section motion-section" id="quand-partir">
+        <div class="when-container">
+
+            <div class="when-top">
+                <div class="when-title">
+                    <div class="explore-label">
+                        <span data-i18n="when.label">QUAND PARTIR</span>
+                    </div>
+
+                    <h2 data-i18n="when.title">
+                        Il n'y a pas de mauvaise
+                        saison pour découvrir le Maroc
+                    </h2>
+                </div>
+
+                <div class="when-note">
+                    <div class="note-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                            stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles"
+                            class="lucide lucide-sparkles">
+                            <path
+                                d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+                            </path>
+                            <path d="M20 2v4"></path>
+                            <path d="M22 4h-4"></path>
+                            <circle cx="4" cy="20" r="2"></circle>
+                        </svg></div>
+                    <p class="desc top-season-text" data-season="printemps" data-i18n="when.tip_spring">
+                        Au printemps, on vous conseille les contreforts de l'Atlas
+                        et la vallée de l'Ourika, quand tout est en fleurs.
+                    </p>
+
+                    <p class="desc top-season-text" data-season="ete" data-i18n="when.tip_summer">
+                        En été, on vous conseille les journées aérées d'Essaouira
+                        et les randonnées fraîches dans les hauteurs de l'Atlas.
+                    </p>
+
+                    <p class="desc top-season-text" data-season="automne" data-i18n="when.tip_autumn">
+                        En automne, cap sur le Sahara et les villes impériales, entre journées douces,
+                        calme et lumière dorée.
+                    </p>
+
+                    <p class="desc top-season-text" data-season="hiver" data-i18n="when.tip_winter">
+                        En hiver, Marrakech, le désert et le sud marocain offrent
+                        une atmosphère calme, chaleureuse et très agréable.
+                    </p>
+                </div>
+            </div>
+
+            <div class="season-cards">
+
+                <div class="season-card spring" data-season="printemps">
+                    <span class="fill-print"></span>
+                    <div class="card-top">
+                        <div class="season-icon icon-print"><svg xmlns="http://www.w3.org/2000/svg" width="21"
+                                height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                                stroke-linecap="round" stroke-linejoin="round" data-lucide="flower-2"
+                                class="lucide lucide-flower-2">
+                                <path
+                                    d="M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1">
+                                </path>
+                                <circle cx="12" cy="8" r="2"></circle>
+                                <path d="M12 10v12"></path>
+                                <path d="M12 22c4.2 0 7-1.667 7-5-4.2 0-7 1.667-7 5Z"></path>
+                                <path d="M12 22c-4.2 0-7-1.667-7-5 4.2 0 7 1.667 7 5Z"></path>
+                            </svg></div>
+                        <span>01</span>
+                    </div>
+
+                    <h2 class="season-title" data-i18n="when.spring_title">Printemps</h2>
+                    <h4 class="season-months" data-i18n="when.spring_months">MAR – MAI</h4>
+                    <p class="season-subtitle" data-i18n="when.spring_sub">Vallées & Floraisons</p>
+
+                    <div class="line"></div>
+
+                    <p class="go-for" data-i18n="when.ideal_for">IDÉAL POUR</p>
+                    <p class="season-text" data-i18n="when.spring_text">
+                        Les vallées en fleurs, les paysages verdoyants de l'Atlas et un climat agréable dans les villes.
+                    </p>
+                </div>
+
+                <div class="season-card summer" data-season="ete">
+                    <span class="fill-ete"></span>
+                    <div class="card-top">
+                        <div class="season-icon icon-ete"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                                stroke-linecap="round" stroke-linejoin="round" data-lucide="sun"
+                                class="lucide lucide-sun">
+                                <circle cx="12" cy="12" r="4"></circle>
+                                <path d="M12 2v2"></path>
+                                <path d="M12 20v2"></path>
+                                <path d="m4.93 4.93 1.41 1.41"></path>
+                                <path d="m17.66 17.66 1.41 1.41"></path>
+                                <path d="M2 12h2"></path>
+                                <path d="M20 12h2"></path>
+                                <path d="m6.34 17.66-1.41 1.41"></path>
+                                <path d="m19.07 4.93-1.41 1.41"></path>
+                            </svg></div>
+                        <span>02</span>
+                    </div>
+
+                    <h2 class="season-title" data-i18n="when.summer_title">Été</h2>
+                    <h4 class="season-months" data-i18n="when.summer_months">JUIN – AOÛT</h4>
+                    <p class="season-subtitle" data-i18n="when.summer_sub">Côte & Montagnes</p>
+
+                    <div class="line"></div>
+
+                    <p class="go-for" data-i18n="when.ideal_for">IDÉAL POUR</p>
+                    <p class="season-text" data-i18n="when.summer_text">
+                        Profiter de la fraîcheur du littoral atlantique ou explorer les montagnes du Haut Atlas.
+                    </p>
+                </div>
+
+                <div class="season-card autumn active" data-season="automne">
+                    <span class="fill-aut"></span>
+                    <div class="card-top">
+                        <div class="season-icon icon-aut"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                                stroke-linecap="round" stroke-linejoin="round" data-lucide="leaf"
+                                class="lucide lucide-leaf">
+                                <path
+                                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z">
+                                </path>
+                                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                            </svg></div>
+                        <span>03</span>
+                    </div>
+
+                    <h2 class="season-title" data-i18n="when.autumn_title">Automne</h2>
+                    <h4 class="season-months" data-i18n="when.autumn_months">SEPT – NOV</h4>
+                    <p class="season-subtitle" data-i18n="when.autumn_sub">Désert & Villes impériales</p>
+
+                    <div class="line"></div>
+
+                    <p class="go-for" data-i18n="when.ideal_for">IDÉAL POUR</p>
+                    <p class="season-text" data-i18n="when.autumn_text">
+                        La meilleure période pour le désert : journées douces, lumière magnifique et moins d'affluence.
+                    </p>
+                </div>
+
+                <div class="season-card winter" data-season="hiver">
+                    <span class="fill-hiver"></span>
+                    <div class="card-top">
+                        <div class="season-icon icon-hiv"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                                stroke-linecap="round" stroke-linejoin="round" data-lucide="moon"
+                                class="lucide lucide-moon">
+                                <path
+                                    d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401">
+                                </path>
+                            </svg></div>
+                        <span>04</span>
+                    </div>
+
+                    <h2 class="season-title" data-i18n="when.winter_title">Hiver</h2>
+                    <h4 class="season-months" data-i18n="when.winter_months">DEC – FEV</h4>
+                    <p class="season-subtitle" data-i18n="when.winter_sub">Nuits sahariennes</p>
+
+                    <div class="line"></div>
+
+                    <p class="go-for" data-i18n="when.ideal_for">IDÉAL POUR</p>
+                    <p class="season-text" data-i18n="when.winter_text">
+                        Des nuits étoilées dans le Sahara et des sommets enneigés dans les montagnes marocaines.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="info-cols" style="margin-top: 2rem;">
+            <div class="iblock">
+                <h3 data-i18n="when.temp_title">🌡️ Températures moyennes</h3>
+                <div class="iflex"><span class="il" data-i18n="when.temp1_label">Marrakech — été</span><span
+                        class="iv">38 – 42°C</span></div>
+                <div class="iflex"><span class="il" data-i18n="when.temp2_label">Marrakech — hiver</span><span
+                        class="iv">14 – 20°C</span></div>
+                <div class="iflex"><span class="il" data-i18n="when.temp3_label">Essaouira — été</span><span
+                        class="iv">22 – 26°C</span></div>
+                <div class="iflex"><span class="il" data-i18n="when.temp4_label">Merzouga — nuit désert</span><span
+                        class="iv">5 – 15°C</span></div>
+                <div class="iflex"><span class="il" data-i18n="when.temp5_label">Chefchaouen — printemps</span><span
+                        class="iv">18 – 24°C</span></div>
+            </div>
+            <div class="iblock">
+                <h3 data-i18n="when.events_title">🎪 Événements à ne pas manquer</h3>
+                <div class="iflex"><span class="il" data-i18n="when.event1">Festival Gnaoua — Essaouira</span><span
+                        class="iv" data-i18n="when.event1_date">Juin</span></div>
+                <div class="iflex"><span class="il">Mawazine — Rabat</span><span class="iv"
+                        data-i18n="when.event2_date">Juin</span></div>
+                <div class="iflex"><span class="il" data-i18n="when.event3">Musiques Sacrées de Fès</span><span
+                        class="iv" data-i18n="when.event3_date">Juin</span></div>
+                <div class="iflex"><span class="il" data-i18n="when.event4">Moussem des Fiançailles —
+                        Imilchil</span><span class="iv" data-i18n="when.event4_date">Septembre</span></div>
+                <div class="iflex"><span class="il">Moussem de Tan-Tan</span><span class="iv"
+                        data-i18n="when.event5_date">Mai</span></div>
+            </div>
+        </div>
+
+
+        <script>
+            const cards = document.querySelectorAll(".season-card");
+            const note = document.querySelector(".when-note");
+            const topTexts = document.querySelectorAll(".top-season-text");
+
+            cards.forEach(function (card) {
+                card.addEventListener("mouseenter", function () {
+                    const season = card.dataset.season;
+
+                    note.classList.add("show");
+
+                    topTexts.forEach(function (text) {
+                        text.classList.remove("active");
+                    });
+
+                    const currentText = document.querySelector('.top-season-text[data-season="' + season + '"]');
+                    currentText.classList.add("active");
+                });
+            });
+        </script>
+    </section>
+
+    <section class="gastro-cta motion-section">
+        <div class="cta-container">
+
+            <div class="cta-label">
+                <span></span>
+                <p data-i18n="when_cta.label">PRÊT À EXPLORER LES VILLES DU MAROC ?</p>
+                <span></span>
+            </div>
+
+            <h2 data-i18n="when_cta.title">
+                Chaque ville du Maroc révèle une facette différente du pays : médinas vivantes, kasbahs dorées, villages
+                bleus, plages atlantiques et portes du désert.
+            </h2>
+
+            <a href="reserver.html" class="cta-btn" data-i18n="cta.btn">
+                Planifier mon voyage →
+            </a>
+
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+
+        <div class="footer-col footer-brand">
+            <div class="footer-logo">
+                <img src="images/azul.png" width="75px" height="75px" alt="azulVoyage">
+            </div>
+            <span class="footer-label" data-i18n="footer.slogan">Votre partenaire pour découvrir le Maroc
+                autrement.</span>
+            <p class="footer-label" data-i18n="footer.desc">Tours & transport marocain premium.</p>
+            <div class="note-tag small" data-i18n="footer.note">Votre aventure commence ici</div>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-i18n="footer.explore_title">Explorer</h4>
+            <ul>
+                <li><a href="exploreMaroc.html" data-i18n="footer.explore_maroc">Découvrir le Maroc</a></li>
+                <li><a href="transport.html" data-i18n="footer.explore_transport">Transport</a></li>
+                <li><a href="package.html" data-i18n="footer.explore_packages">Tours & Packages</a></li>
+                <li><a href="contact.html" data-i18n="footer.explore_about">À propos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-i18n="footer.services_title">Services</h4>
+            <ul>
+                <li><a href="#" data-i18n="footer.services_airport">Transfert Aéroport</a></li>
+                <li><a href="#" data-i18n="footer.services_driver">Chauffeur Privé</a></li>
+                <li><a href="#" data-i18n="footer.services_desert">Tours Désert</a></li>
+                <li><a href="#" data-i18n="footer.services_booking">Réservations</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+            <h4 data-i18n="footer.newsletter_title">Newsletter</h4>
+            <p data-i18n="footer.newsletter_desc">Routes saisonnières & offres.</p>
+            <form action="https://formspree.io/f/{form_id}" method="post" class="newsletter-form">
+                <input type="email" placeholder="votre@email" data-i18n-placeholder="footer.newsletter_placeholder">
+                <button class="button" data-i18n="footer.newsletter_btn">Rejoindre</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"><i class="ti ti-brand-instagram"></i></a>
+                <a href="#"><i class="ti ti-brand-facebook"></i></a>
+                <a href="#"><i class="ti ti-brand-youtube"></i></a>
+                <a href="#"><i class="ti ti-brand-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="action">
+
+            <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+                <symbol id="icon-arrow-up-hand" viewBox="0 0 512 512">
+                    <g fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M214 384 L214 184 L164 184 L256 80 L348 184 L298 184 L298 384 Q298 402 284 408 L236 416 Q220 414 214 384 Z" />
+                        <path d="M228 408 L242 434" />
+                        <path d="M258 406 L270 430" />
+                        <path d="M286 404 L296 424" />
+                        <path d="M186 210 L174 186" />
+                        <path d="M206 210 L196 186" />
+                        <path d="M224 210 L216 186" />
+                        <path d="M308 210 L320 190" />
+                        <path d="M326 210 L336 196" />
+                        <path d="M340 210 L346 200" />
+                    </g>
+                </symbol>
+            </svg>
+            <a href="#top" class="float-btn whatsapp"><svg class="arrow-icon">
+                    <use href="#icon-arrow-up-hand"></use>
+                </svg>
+            </a>
+
+            <a href="#" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="50px" height="50px"
+                    class="float-btn whatsapp whtsp-color"></a>
+
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menuToggle");
+            const navLinks = document.getElementById("navLinks");
+
+            if (!menuToggle || !navLinks) return;
+
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+                menuToggle.classList.toggle("active");
+            });
+
+            navLinks.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    navLinks.classList.remove("active");
+                    menuToggle.classList.remove("active");
+                });
+            });
+        });
+    </script>
+
+    <script src="script.js" defer></script>
+    <script type="module" src="motion-animations.js"></script>
+    <script src="js/i18n.js" defer></script>
+</body>
+
+</html>

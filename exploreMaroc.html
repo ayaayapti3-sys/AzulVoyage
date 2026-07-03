@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azul Voyage</title>
+    <link rel="icon" href="images/azul.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-logo">
+            <a href="index.html" class="logo"><img src="images/azul.png" width="55px" height="55px"
+                    alt="azulVoyage"></a>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" data-i18n="nav.home">Accueil</a>
+            <a href="exploreMaroc.html" data-i18n="nav.explore">Découvrir le Maroc</a>
+            <a href="transport.html" data-i18n="nav.transport">Transport</a>
+            <a href="package.html" data-i18n="nav.packages">Tours & Packages</a>
+            <a href="contact.html" data-i18n="nav.about">À propos</a>
+        </nav>
+
+        <a href="reserver.html" class="nav-btn" data-i18n="nav.book">Réserver</a>
+
+        
+        <button class="lang-toggle" id="langToggle">
+            EN
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <section class="exploreMaroc motion-section">
+
+        <div class="explore-content">
+            <span class="explore-label" data-i18n="explore.label">Découvrir le Maroc</span>
+
+            <h1 data-i18n="explore.title">
+                Explorez le
+                Maroc
+                Autrement
+            </h1>
+
+            <p class="desc" style="padding: 20px 0;" data-i18n="explore.desc">
+                Des villes impériales aux paysages désertiques, découvrez les lieux,
+                les saveurs et les traditions qui rendent le Maroc inoubliable.
+            </p>
+
+            <div class="explore-actions">
+                <a href="#subnav" class="btn-primaryE" data-i18n="explore.btn_start">
+                    Commencer l'exploration ↓
+                </a>
+
+                <a href="package.html" class="btn-secondaryG" data-i18n="explore.btn_guide">
+                    →   Découvrir nos circuits
+                </a>
+            </div>
+        </div>
+
+        <div class="explore-img">
+            <img src="images/morocco.png" alt="Découvrir le Maroc">
+
+            <div class="small-cardM top-card">
+                <div class="pin">⌖</div>
+                <div>
+                    <strong>Chefchaouen</strong>
+                    <small data-i18n="explore.card_chef">Ville bleue du Maroc</small>
+                </div>
+            </div>
+
+            <div class="small-cardM bottom-card">
+                <div class="pin">⌖</div>
+                <div>
+                    <strong>Aït Ben Haddou</strong>
+                    <small>Kasbah • UNESCO</small>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="explore-subnav" id="subnav">
+        <a href="exploreMaroc.html" class="subnav active" onclick="showDTab('villes',this)" data-i18n="explore.subnav_villes">Villes &amp; Sites</a>
+        <a href="culture.html" class="subnav" data-i18n="explore.subnav_culture">Culture &amp; Coutumes</a>
+        <a href="guastronomie.html" class="subnav" data-i18n="explore.subnav_gastro">Gastronomie</a>
+        <a href="quandPartir.html" class="subnav" data-i18n="explore.subnav_quand">Quand partir</a>
+    </div>
+
+
+    <section class="dsec active motion-section" id="dsec-villes">
+        <div class="cities-list">
+
+            <div class="city-flex">
+                <div class="city-num">01</div>
+                <div class="city-detail">
+                    <div class="city-flex-head">
+                        <div>
+                            <div class="city-flex-region" data-i18n="city.marrakech_region">Ville impériale — Région Marrakech-Safi</div>
+                            <h3 class="city-flex-name">Marrakech</h3>
+                        </div>
+                    </div>
+                    <p class="desc-city" data-i18n="city.marrakech_desc">La Ville Rouge, ancienne capitale du Maroc. La médina inscrite à l'UNESCO,
+                        la Djemaa El-Fna, les souks labyrinthiques, les riads luxueux et les palais historiques en font
+                        la destination phare du tourisme marocain. À visiter absolument : les jardins Majorelle, le
+                        Palais de la Bahia et les souks de l'artisanat.</p>
+                    <div class="city-pills">
+                        <span class="pill" data-i18n="city.marrakech_p1">Djemaa El-Fna</span>
+                        <span class="pill" data-i18n="city.marrakech_p2">Jardins Majorelle</span>
+                        <span class="pill" data-i18n="city.marrakech_p3">Médina UNESCO</span>
+                        <span class="pill" data-i18n="city.marrakech_p4">Palais de la Bahia</span>
+                        <span class="pill" data-i18n="city.marrakech_p5">Souks</span>
+                    </div>
+                </div>
+                <div class="city-img">
+                    <img src="images/casablanca.png" alt="">
+                </div>
+            </div>
+
+            <div class="city-flex">
+                <div class="city-num">02</div>
+                <div class="city-detail">
+                    <div class="city-flex-head">
+                        <div>
+                            <div class="city-flex-region" data-i18n="city.fes_region">Ville impériale — Région Fès-Meknès</div>
+                            <h3 class="city-flex-name">Fès</h3>
+                        </div>
+                    </div>
+                    <p class="desc-city" data-i18n="city.fes_desc">Capitale spirituelle et culturelle du Maroc. Fès El-Bali est la plus
+                        grande
+                        médina médiévale au monde, entièrement piétonne. Les tanneries Chouara, la mosquée Qarawiyyin
+                        (plus ancienne université du monde fondée en 859 ap. J.-C.), les madrasas et les fondouks en
+                        font une ville unique sur la planète.</p>
+                    <div class="city-pills">
+                        <span class="pill" data-i18n="city.fes_p1">Tanneries Chouara</span>
+                        <span class="pill" data-i18n="city.fes_p2">Qarawiyyin</span>
+                        <span class="pill" data-i18n="city.fes_p3">Médina médiévale</span>
+                        <span class="pill" data-i18n="city.fes_p4">Artisanat</span>
+                    </div>
+                </div>
+                <div class="city-img">
+                    <img src="images/fes 2.png" alt="">
+                </div>
+            </div>
+
+            <div class="city-flex">
+                <div class="city-num">03</div>
+                <div class="city-detail">
+                    <div class="city-flex-head">
+                        <div>
+                            <div class="city-flex-region" data-i18n="city.chef_region">Montagne du Rif — Région Tanger-Tétouan</div>
+                            <h3 class="city-flex-name">Chefchaouen</h3>
+                        </div>
+                    </div>
+                    <p class="desc-city" data-i18n="city.chef_desc">La légendaire Ville Bleue, nichée dans les montagnes du Rif. Toutes ses
+                        ruelles sont peintes en nuances de bleu et blanc. Un havre de paix idéal pour la randonnée, la
+                        photographie et la découverte de l'artisanat local. Ambiance unique, loin des foules des grandes
+                        villes.</p>
+                    <div class="city-pills">
+                        <span class="pill" data-i18n="city.chef_p1">Ruelles bleues</span>
+                        <span class="pill" data-i18n="city.chef_p2">Randonnée</span>
+                        <span class="pill" data-i18n="city.chef_p3">Montagne Rif</span>
+                        <span class="pill" data-i18n="city.chef_p4">Artisanat</span>
+                    </div>
+                </div>
+                <div class="city-img">
+                    <img src="images/chefchaouen 2.png" alt="">
+                </div>
+            </div>
+
+            <div class="city-flex">
+                <div class="city-num">04</div>
+                <div class="city-detail">
+                    <div class="city-flex-head">
+                        <div>
+                            <div class="city-flex-region" data-i18n="city.merzouga_region">Désert du Sahara — Région Drâa-Tafilalet</div>
+                            <h3 class="city-flex-name">Merzouga &amp; Erg Chebbi</h3>
+                        </div>
+                    </div>
+                    <p class="desc-city" data-i18n="city.merzouga_desc">Les dunes dorées de l'Erg Chebbi atteignent 150 mètres de hauteur — parmi
+                        les plus hautes du Sahara. Nuit en bivouac berbère sous les étoiles, balade à dromadaire au
+                        coucher du soleil, lever de soleil sur l'or des dunes. Une expérience hors du temps, absolument
+                        inoubliable.</p>
+                    <div class="city-pills">
+                        <span class="pill">Erg Chebbi</span>
+                        <span class="pill" data-i18n="city.merzouga_p2">Dromadaire</span>
+                        <span class="pill" data-i18n="city.merzouga_p3">Bivouac</span>
+                        <span class="pill" data-i18n="city.merzouga_p4">Coucher de soleil</span>
+                    </div>
+                </div>
+                <div class="city-img">
+                    <img src="images/merzouga 2.png" alt="">
+                </div>
+            </div>
+
+            <div class="city-flex">
+                <div class="city-num">05</div>
+                <div class="city-detail">
+                    <div class="city-flex-head">
+                        <div>
+                            <div class="city-flex-region" data-i18n="city.essaouira_region">Côte Atlantique — Région Marrakech-Safi</div>
+                            <h3 class="city-flex-name">Essaouira</h3>
+                        </div>
+                    </div>
+                    <p class="desc-city" data-i18n="city.essaouira_desc">La Cité des Alizés — port de pêche historique aux remparts portugais du
+                        XVIe siècle. Capitale mondiale du windsurf et kitesurf grâce à ses vents constants. Médina
+                        inscrite à l'UNESCO, galeries d'art, ambiance hippie-chic et le célèbre Festival Gnaoua chaque
+                        année en juin.</p>
+                    <div class="city-pills">
+                        <span class="pill" data-i18n="city.essaouira_p1">Remparts UNESCO</span>
+                        <span class="pill">Kitesurf</span>
+                        <span class="pill">Festival Gnaoua</span>
+                        <span class="pill" data-i18n="city.essaouira_p4">Artisanat Thuya</span>
+                    </div>
+                </div>
+                <div class="city-img">
+                    <img src="images/essouira 2.png" alt="">
+                </div>
+            </div>
+
+            <div class="city-flex">
+                <div class="city-num">06</div>
+                <div class="city-detail">
+                    <div class="city-flex-head">
+                        <div>
+                            <div class="city-flex-region" data-i18n="city.ouarzazate_region">Porte du désert — Région Drâa-Tafilalet</div>
+                            <h3 class="city-flex-name">Ouarzazate</h3>
+                        </div>
+                    </div>
+                    <p class="desc-city" data-i18n="city.ouarzazate_desc">Le "Hollywood d'Afrique" abrite les plus grands studios de cinéma
+                        d'Afrique
+                        — Gladiator, Lawrence d'Arabie, Game of Thrones y ont été tournés. Porte idéale pour visiter
+                        l'UNESCO Aït Benhaddou, la Vallée du Drâa et les kasbahs du sud marocain.</p>
+                    <div class="city-pills">
+                        <span class="pill" data-i18n="city.ouarzazate_p1">Studios cinéma</span>
+                        <span class="pill">Aït Benhaddou</span>
+                        <span class="pill" data-i18n="city.ouarzazate_p3">Kasbahs</span>
+                        <span class="pill" data-i18n="city.ouarzazate_p4">Vallée du Drâa</span>
+                    </div>
+                </div>
+                <div class="city-img">
+                    <img src="images/Ouarzazate.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="gastro-cta motion-section">
+        <div class="cta-container">
+
+            <div class="cta-label">
+                <span></span>
+                <p data-i18n="explore_cta.label">PRÊT À TROUVER LE MOMENT IDÉAL ?</p>
+                <span></span>
+            </div>
+
+            <h2 data-i18n="explore_cta.title">
+                Choisissez votre saison idéale, du printemps dans l'Atlas aux lumières douces de l'hiver marocain.
+            </h2>
+
+            <a href="reserver.html" class="cta-btn" data-i18n="cta.btn">
+                Planifier mon voyage →
+            </a>
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-col footer-brand">
+            <div class="footer-logo">
+                <img src="images/azul.png" width="75px" height="75px" alt="azulVoyage">
+            </div>
+            <span class="footer-label" data-i18n="footer.slogan">Votre partenaire pour découvrir le Maroc autrement.</span>
+            <p class="footer-label" data-i18n="footer.desc">Tours & transport marocain premium.</p>
+            <div class="note-tag small" data-i18n="footer.note">Votre aventure commence ici</div>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-i18n="footer.explore_title">Explorer</h4>
+            <ul>
+                <li><a href="exploreMaroc.html" data-i18n="footer.explore_maroc">Découvrir le Maroc</a></li>
+                <li><a href="transport.html" data-i18n="footer.explore_transport">Transport</a></li>
+                <li><a href="package.html" data-i18n="footer.explore_packages">Tours & Packages</a></li>
+                <li><a href="contact.html" data-i18n="footer.explore_about">À propos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-i18n="footer.services_title">Services</h4>
+            <ul>
+                <li><a href="#" data-i18n="footer.services_airport">Transfert Aéroport</a></li>
+                <li><a href="#" data-i18n="footer.services_driver">Chauffeur Privé</a></li>
+                <li><a href="#" data-i18n="footer.services_desert">Tours Désert</a></li>
+                <li><a href="#" data-i18n="footer.services_booking">Réservations</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+            <h4 data-i18n="footer.newsletter_title">Newsletter</h4>
+            <p data-i18n="footer.newsletter_desc">Routes saisonnières & offres.</p>
+            <form action="https://formspree.io/f/{form_id}" method="post" class="newsletter-form">
+                <input type="email" placeholder="votre@email" data-i18n-placeholder="footer.newsletter_placeholder">
+                <button class="button" data-i18n="footer.newsletter_btn">Rejoindre</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"><i class="ti ti-brand-instagram"></i></a>
+                <a href="#"><i class="ti ti-brand-facebook"></i></a>
+                <a href="#"><i class="ti ti-brand-youtube"></i></a>
+                <a href="#"><i class="ti ti-brand-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="action">
+
+
+            <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+                <symbol id="icon-arrow-up-hand" viewBox="0 0 512 512">
+                    <g fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M214 384
+               L214 184
+               L164 184
+               L256 80
+               L348 184
+               L298 184
+               L298 384
+               Q298 402 284 408
+               L236 416
+               Q220 414 214 384 Z" />
+                        <path d="M228 408 L242 434" />
+                        <path d="M258 406 L270 430" />
+                        <path d="M286 404 L296 424" />
+                        <path d="M186 210 L174 186" />
+                        <path d="M206 210 L196 186" />
+                        <path d="M224 210 L216 186" />
+                        <path d="M308 210 L320 190" />
+                        <path d="M326 210 L336 196" />
+                        <path d="M340 210 L346 200" />
+                    </g>
+                </symbol>
+            </svg>
+            <a href="#top" class="float-btn whatsapp"><svg class="arrow-icon">
+                    <use href="#icon-arrow-up-hand"></use>
+                </svg>
+            </a>
+
+            <a href="#" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="50px" height="50px"
+                    class="float-btn whatsapp whtsp-color"></a>
+
+        </div>
+    </footer>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menuToggle");
+            const navLinks = document.getElementById("navLinks");
+
+            if (!menuToggle || !navLinks) return;
+
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+                menuToggle.classList.toggle("active");
+            });
+
+            navLinks.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    navLinks.classList.remove("active");
+                    menuToggle.classList.remove("active");
+                });
+            });
+        });
+    </script>
+
+    <script src="script.js" defer></script>
+    <script type="module" src="motion-animations.js"></script>
+     <script src="js/i18n.js" defer></script>
+</body>
+
+</html>

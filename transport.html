@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azul Voyage</title>
+    <link rel="icon" href="images/azul.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+
+</head>
+
+<body id="top">
+
+    <header class="navbar">
+        <div class="nav-logo">
+            <a href="index.html" class="logo"><img src="images/azul.png" width="55px" height="55px"
+                    alt="azulVoyage"></a>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" data-i18n="nav.home">Accueil</a>
+            <a href="exploreMaroc.html" data-i18n="nav.explore">Découvrir le Maroc</a>
+            <a href="transport.html" data-i18n="nav.transport">Transport</a>
+            <a href="package.html" data-i18n="nav.packages">Tours & Packages</a>
+            <a href="contact.html" data-i18n="nav.about">À propos</a>
+        </nav>
+
+        <a href="reserver.html" class="nav-btn" data-i18n="nav.book">Réserver</a>
+             <button class="lang-toggle" id="langToggle">
+            EN
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+
+    <section class="transport-page-section motion-section" id="transport">
+
+        <div class="transport-container">
+
+            <div class="transport-header">
+                <span class="explore-label" data-i18n="tp.label">SE DÉPLACER</span>
+
+                <h1 data-i18n="tp.title">Nos solutions de transport au Maroc</h1>
+
+                <p data-i18n="tp.desc">
+                    Que vous voyagiez seul, en couple, en famille ou en groupe, nous proposons des véhicules adaptés à
+                    tous vos besoins : transferts aéroport, circuits touristiques, excursions, déplacements privés et
+                    voyages longue distance.
+                </p>
+            </div>
+
+            <div class="transport-content">
+
+                <div class="transport-image-card">
+                    <img src="images/transport-head.png" alt="Transport premium au Maroc">
+
+                    <div class="image-badge" data-i18n="tp.badge">
+                        ✧ Voyage sur mesure
+                    </div>
+
+                    <a href="#vehicules" class="image-btn" data-i18n="tp.btn_vehicles">
+                        Découvrir nos véhicules →
+                    </a>
+                </div>
+
+                <div class="transport-services">
+
+                    <article class="transport-service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M2 16L22 4L16 22L11 13L2 16Z"></path>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="tp.srv1_title">Transferts aéroport</h3>
+                        <p data-i18n="tp.srv1_desc">Accueil et trajets directs</p>
+                        <span class="small-line"></span>
+                    </article>
+
+                    <article class="transport-service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 12A4 4 0 1 0 12 4A4 4 0 0 0 12 12Z"></path>
+                                <path d="M4 21C4 17.5 7 15 12 15C17 15 20 17.5 20 21"></path>
+                                <path d="M9 13L12 16L15 13"></path>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="tp.srv2_title">Chauffeur privé</h3>
+                        <p data-i18n="tp.srv2_desc">Disponibilité et confort</p>
+                        <span class="small-line"></span>
+                    </article>
+
+                    <article class="transport-service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M8 11A3 3 0 1 0 8 5A3 3 0 0 0 8 11Z"></path>
+                                <path d="M16 11A3 3 0 1 0 16 5A3 3 0 0 0 16 11Z"></path>
+                                <path d="M3 21C3 17.5 5 15 8 15"></path>
+                                <path d="M21 21C21 17.5 19 15 16 15"></path>
+                                <path d="M8 21C8 18 9.5 16 12 16C14.5 16 16 18 16 21"></path>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="tp.srv3_title">Voyage en groupe</h3>
+                        <p data-i18n="tp.srv3_desc">Familles et excursions</p>
+                        <span class="small-line"></span>
+                    </article>
+
+                    <article class="transport-service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 15L6 9C6.4 8 7.2 7 8.4 7H15.6C16.8 7 17.6 8 18 9L20 15"></path>
+                                <path d="M3 15H21V19H18A2 2 0 0 1 14 19H10A2 2 0 0 1 6 19H3V15Z"></path>
+                                <path d="M7 12H17"></path>
+                                <path d="M7 19A1 1 0 1 0 7 17A1 1 0 0 0 7 19Z"></path>
+                                <path d="M17 19A1 1 0 1 0 17 17A1 1 0 0 0 17 19Z"></path>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="tp.srv4_title">Véhicules luxe</h3>
+                        <p data-i18n="tp.srv4_desc">Expérience haut de gamme</p>
+                        <span class="small-line"></span>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="fleet-section motion-section" id="vehicules">
+    <div class="fleet-container">
+
+        <div class="fleet-top">
+            <div>
+                <span class="explore-label" data-i18n="fleet.label">NOTRE FLOTTE</span>
+                <h2 data-i18n="fleet.title">Des véhicules adaptés à chaque besoin</h2>
+            </div>
+
+            <p data-i18n="fleet.desc">
+                Choisissez le type de véhicule qui correspond à votre trajet,
+                au nombre de voyageurs et au confort souhaité.
+            </p>
+        </div>
+
+        <div class="fleet-flex">
+
+            <article class="fleet-card">
+                <div class="fleet-img">
+                    <img src="images/berline.png" alt="Berline confort">
+                </div>
+                <div class="fleet-info">
+                    <span class="fleet-num">01</span>
+                    <h3 data-i18n="fleet.v1_title">Berline Confort</h3>
+                    <p class="fleet-for" data-i18n="fleet.v1_for">Idéale pour : 1 à 3 personnes</p>
+                    <p data-i18n="fleet.v1_desc">
+                        Parfaite pour les transferts aéroport, les déplacements en ville
+                        ou les trajets privés courts.
+                    </p>
+                </div>
+                <div class="btn-center"> <a href="reserver.html" class="nav-btn" data-i18n="nav.book">Réserver</a> </div>
+            </article>
+
+            <article class="fleet-card">
+                <div class="fleet-img">
+                    <img src="images/suv.png" alt="SUV premium">
+                </div>
+                <div class="fleet-info">
+                    <span class="fleet-num">02</span>
+                    <h3 data-i18n="fleet.v2_title">SUV Premium</h3>
+                    <p class="fleet-for" data-i18n="fleet.v2_for">Idéale pour : 1 à 4 personnes</p>
+                    <p data-i18n="fleet.v2_desc">
+                        Un véhicule spacieux et élégant, adapté aux trajets inter-villes,
+                        circuits privés et voyages avec bagages.
+                    </p>
+                </div>
+                <div class="btn-center"> <a href="reserver.html" class="nav-btn" data-i18n="nav.book">Réserver</a> </div>
+            </article>
+
+            <article class="fleet-card">
+                <div class="fleet-img">
+                    <img src="images/van.png" alt="Van touristique">
+                </div>
+                <div class="fleet-info">
+                    <span class="fleet-num">03</span>
+                    <h3 data-i18n="fleet.v3_title">Van Touristique</h3>
+                    <p class="fleet-for" data-i18n="fleet.v3_for">Idéal pour : familles et petits groupes</p>
+                    <p data-i18n="fleet.v3_desc">
+                        Le choix parfait pour les familles, groupes d'amis
+                        ou circuits touristiques.
+                    </p>
+                </div>
+                <div class="btn-center"> <a href="reserver.html" class="nav-btn" data-i18n="nav.book">Réserver</a> </div>
+            </article>
+
+            <article class="fleet-card">
+                <div class="fleet-img">
+                    <img src="images/minibus.png" alt="Minibus">
+                </div>
+                <div class="fleet-info">
+                    <span class="fleet-num">04</span>
+                    <h3>Minibus</h3>
+                    <p class="fleet-for" data-i18n="fleet.v4_for">Idéal pour : groupes moyens</p>
+                    <p data-i18n="fleet.v4_desc">
+                        Une solution pratique pour les groupes, excursions organisées,
+                        événements ou voyages entre villes.
+                    </p>
+                </div>
+                <div class="btn-center"> <a href="reserver.html" class="nav-btn" data-i18n="nav.book">Réserver</a> </div>
+            </article>
+
+            <article class="fleet-card">
+                <div class="fleet-img">
+                    <img src="images/autocar.png" alt="Autocar touristique">
+                </div>
+                <div class="fleet-info">
+                    <span class="fleet-num">05</span>
+                    <h3 data-i18n="fleet.v5_title">Autocar Touristique</h3>
+                    <p class="fleet-for" data-i18n="fleet.v5_for">Idéal pour : grands groupes</p>
+                    <p data-i18n="fleet.v5_desc">
+                        Pour les voyages organisés, agences partenaires, écoles,
+                        entreprises ou groupes touristiques.
+                    </p>
+                </div>
+                <div class="btn-center"> <a href="reserver.html" class="nav-btn" data-i18n="nav.book">Réserver</a> </div>
+            </article>
+
+            <article class="fleet-card">
+                <div class="fleet-img">
+                    <img src="images/4x4.png" alt="4x4 désert">
+                </div>
+                <div class="fleet-info">
+                    <span class="fleet-num">06</span>
+                    <h3 data-i18n="fleet.v6_title">4x4 Désert</h3>
+                    <p class="fleet-for" data-i18n="fleet.v6_for">Idéal pour : Sahara, montagne, pistes</p>
+                    <p data-i18n="fleet.v6_desc">
+                        Adapté aux aventures dans le désert, aux pistes du sud marocain
+                        et aux régions difficiles d'accès.
+                    </p>
+                </div>
+                <div class="btn-center"> <a href="reserver.html" class="nav-btn" data-i18n="nav.book">Réserver</a> </div>
+            </article>
+
+            <article class="fleet-card">
+                <div class="fleet-img">
+                    <img src="images/luxe.png" alt="Véhicule luxe">
+                </div>
+                <div class="fleet-info">
+                    <span class="fleet-num">07</span>
+                    <h3 data-i18n="fleet.v7_title">Véhicule Luxe</h3>
+                    <p class="fleet-for" data-i18n="fleet.v7_for">Idéal pour : VIP, événements, business</p>
+                    <p data-i18n="fleet.v7_desc">
+                        Des véhicules élégants avec chauffeur privé pour une expérience
+                        plus exclusive.
+                    </p>
+                </div>
+                <div class="btn-center"> <a href="reserver.html" class="nav-btn" data-i18n="nav.book">Réserver</a> </div>
+            </article>
+
+            <article class="fleet-card">
+                <div class="fleet-img">
+                    <img src="images/navette.png" alt="Navette groupe">
+                </div>
+                <div class="fleet-info">
+                    <span class="fleet-num">08</span>
+                    <h3 data-i18n="fleet.v8_title">Navette Groupe</h3>
+                    <p class="fleet-for" data-i18n="fleet.v8_for">Idéale pour : excursions et transferts collectifs</p>
+                    <p data-i18n="fleet.v8_desc">
+                        Une option pratique pour les départs organisés vers Essaouira,
+                        Ourika, Ouzoud, Agafay ou Chefchaouen.
+                    </p>
+                </div>
+                <div class="btn-center"> <a href="reserver.html" class="nav-btn" data-i18n="nav.book">Réserver</a> </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="route-section motion-section">
+
+    <div class="route-card">
+
+        <div class="route-content">
+            <div class="route-label">
+                <span></span>
+                <p data-i18n="route.label">D'UNE VILLE À L'AUTRE</p>
+            </div>
+
+            <h2 data-i18n="route.title">
+                Le Maroc, sans contrainte
+                de route
+            </h2>
+
+            <p class="route-text" data-i18n="route.desc">
+                Des médinas de Marrakech aux dunes de Merzouga, nos chauffeurs
+                connaissent chaque itinéraire pour un voyage fluide et serein.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="trip-section motion-section" id="types-trajets">
+    <div class="trip-container">
+
+        <div class="trip-header">
+            <div class="trip-label">
+                <span></span>
+                <p data-i18n="trip.label">SUR MESURE</p>
+                <span></span>
+            </div>
+
+            <h2 data-i18n="trip.title">Pour quel type de trajet ?</h2>
+
+            <p data-i18n="trip.desc">
+                Chaque déplacement a ses besoins. Voici les services que nous
+                organisons le plus souvent.
+            </p>
+        </div>
+
+
+        <div class="trip-flex">
+
+            <article class="trip-card">
+                <div class="trip-icon">
+                    <i class="ti ti-plane-arrival"></i>
+                </div>
+                <h3 data-i18n="trip.t1_title">Transferts aéroport</h3>
+                <p data-i18n="trip.t1_desc">Aéroport vers hôtel, riad, ville ou destination privée.</p>
+            </article>
+
+            <article class="trip-card">
+                <div class="trip-icon">
+                    <i class="ti ti-mountain"></i>
+                </div>
+                <h3 data-i18n="trip.t2_title">Excursions touristiques</h3>
+                <p data-i18n="trip.t2_desc">Départs vers les cascades, désert, montagnes, villes côtières ou médinas.</p>
+            </article>
+
+            <article class="trip-card">
+                <div class="trip-icon">
+                    <i class="ti ti-map"></i>
+                </div>
+                <h3 data-i18n="trip.t3_title">Circuits privés</h3>
+                <p data-i18n="trip.t3_desc">Voyages personnalisés entre plusieurs villes du Maroc.</p>
+            </article>
+
+            <article class="trip-card">
+                <div class="trip-icon">
+                    <i class="ti ti-calendar-heart"></i>
+                </div>
+                <h3 data-i18n="trip.t4_title">Transport événementiel</h3>
+                <p data-i18n="trip.t4_desc">Mariages, séminaires, groupes professionnels ou événements privés.</p>
+            </article>
+
+            <article class="trip-card">
+                <div class="trip-icon">
+                    <i class="ti ti-navigation"></i>
+                </div>
+                <h3 data-i18n="trip.t5_title">Longues distances</h3>
+                <p data-i18n="trip.t5_desc">Casablanca, Marrakech, Fès, Rabat, Agadir, Merzouga, Tanger...</p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+            <section class="gastro-cta motion-section">
+    <div class="cta-container">
+
+        <div class="cta-label">
+            <span></span>
+            <p data-i18n="tp_cta.label">PLANIFIEZ VOTRE PROCHAIN DÉPLACEMENT</p>
+            <span></span>
+        </div>
+
+        <h2 data-i18n="tp_cta.title">
+            Voyagez en toute sérénité avec un service de transport fiable, confortable et adapté à tous vos besoins.
+        </h2>
+
+        <a href="reserver.html" class="cta-btn" data-i18n="cta.btn">
+            Planifier mon voyage →
+        </a>
+
+    </div>
+</section>
+
+    <footer class="footer">
+
+        <div class="footer-col footer-brand">
+            <div class="footer-logo">
+                <img src="images/azul.png" width="75px" height="75px" alt="azulVoyage">
+            </div>
+            <span class="footer-label" data-i18n="footer.slogan">Votre partenaire pour découvrir le Maroc autrement.</span>
+            <p class="footer-label" data-i18n="footer.desc">Tours & transport marocain premium.</p>
+            <div class="note-tag small" data-i18n="footer.note">Votre aventure commence ici</div>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-i18n="footer.explore_title">Explorer</h4>
+            <ul>
+                <li><a href="exploreMaroc.html" data-i18n="footer.explore_maroc">Découvrir le Maroc</a></li>
+                <li><a href="transport.html" data-i18n="footer.explore_transport">Transport</a></li>
+                <li><a href="package.html" data-i18n="footer.explore_packages">Tours & Packages</a></li>
+                <li><a href="contact.html" data-i18n="footer.explore_about">À propos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-i18n="footer.services_title">Services</h4>
+            <ul>
+                <li><a href="#" data-i18n="footer.services_airport">Transfert Aéroport</a></li>
+                <li><a href="#" data-i18n="footer.services_driver">Chauffeur Privé</a></li>
+                <li><a href="#" data-i18n="footer.services_desert">Tours Désert</a></li>
+                <li><a href="#" data-i18n="footer.services_booking">Réservations</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+            <h4 data-i18n="footer.newsletter_title">Newsletter</h4>
+            <p data-i18n="footer.newsletter_desc">Routes saisonnières & offres.</p>
+            <form action="https://formspree.io/f/{form_id}" method="post" class="newsletter-form">
+                <input type="email" placeholder="votre@email" data-i18n-placeholder="footer.newsletter_placeholder">
+                <button class="button" data-i18n="footer.newsletter_btn">Rejoindre</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"><i class="ti ti-brand-instagram"></i></a>
+                <a href="#"><i class="ti ti-brand-facebook"></i></a>
+                <a href="#"><i class="ti ti-brand-youtube"></i></a>
+                <a href="#"><i class="ti ti-brand-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="action">
+
+            <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+                <symbol id="icon-arrow-up-hand" viewBox="0 0 512 512">
+                    <g fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M214 384 L214 184 L164 184 L256 80 L348 184 L298 184 L298 384 Q298 402 284 408 L236 416 Q220 414 214 384 Z" />
+                        <path d="M228 408 L242 434" />
+                        <path d="M258 406 L270 430" />
+                        <path d="M286 404 L296 424" />
+                        <path d="M186 210 L174 186" />
+                        <path d="M206 210 L196 186" />
+                        <path d="M224 210 L216 186" />
+                        <path d="M308 210 L320 190" />
+                        <path d="M326 210 L336 196" />
+                        <path d="M340 210 L346 200" />
+                    </g>
+                </symbol>
+            </svg>
+            <a href="#top" class="float-btn whatsapp"><svg class="arrow-icon">
+                    <use href="#icon-arrow-up-hand"></use>
+                </svg>
+            </a>
+
+            <a href="#" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="50px" height="50px"
+                    class="float-btn whatsapp whtsp-color"></a>
+
+        </div>
+    </footer>
+
+
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuToggle = document.getElementById("menuToggle");
+                const navLinks = document.getElementById("navLinks");
+
+                if (!menuToggle || !navLinks) return;
+
+                menuToggle.addEventListener("click", function () {
+                    navLinks.classList.toggle("active");
+                    menuToggle.classList.toggle("active");
+                });
+
+                navLinks.querySelectorAll("a").forEach(function (link) {
+                    link.addEventListener("click", function () {
+                        navLinks.classList.remove("active");
+                        menuToggle.classList.remove("active");
+                    });
+                });
+            });
+        </script>
+
+         <script src="script.js" defer></script>
+    <script type="module" src="motion-animations.js"></script>
+    <script src="js/i18n.js" defer></script>
+
+</body>
+
+</html>

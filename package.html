@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azul Voyage</title>
+    <link rel="icon" href="images/azul.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+
+<body id="top">
+
+    <header class="navbar">
+        <div class="nav-logo">
+            <a href="index.html" class="logo"><img src="images/azul.png" width="55px" height="55px" alt="azulVoyage"></a>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" data-i18n="nav.home">Accueil</a>
+            <a href="exploreMaroc.html" data-i18n="nav.explore">Découvrir le Maroc</a>
+            <a href="transport.html" data-i18n="nav.transport">Transport</a>
+            <a href="package.html" data-i18n="nav.packages">Tours & Packages</a>
+            <a href="contact.html" data-i18n="nav.about">À propos</a>
+        </nav>
+
+        <a href="reserver.html" class="nav-btn" data-i18n="nav.book">Réserver</a>
+     <button class="lang-toggle" id="langToggle">
+            EN
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <section class="tours-hero motion-section" id="tours-hero">
+        <div class="tours-hero-container">
+
+            <div class="tours-hero-content">
+                <div class="explore-label">
+                    <span data-i18n="pkg.label">TOURS & PACKAGES</span>
+                </div>
+
+                <h1 data-i18n="pkg.title">
+                    Explorez le Maroc
+                    à votre rythme
+                </h1>
+
+                <p class="desc" data-i18n="pkg.desc">
+                    Des excursions d'une journée aux circuits de plusieurs jours,
+                    découvrez les villes, les cascades, les montagnes et le désert
+                    à travers des expériences organisées avec soin.
+                </p>
+
+                <div class="hero-destinations">
+                    <span data-i18n="pkg.tag1">Médinas</span>
+                    <span data-i18n="pkg.tag2">Cascades</span>
+                    <span data-i18n="pkg.tag3">Désert</span>
+                    <span>Atlas</span>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#most-loved" class="btn-primaryE" data-i18n="pkg.btn_tours">Découvrir les tours</a>
+                    <a href="#destinations" class="btn-secondary" data-i18n="pkg.btn_dest">Voir les destinations</a>
+                </div>
+            </div>
+
+            <div class="tours-hero-visual">
+                <div class="hero-image-wrap">
+                    <img src="images/tours-hero.png" alt="Tours et packages au Maroc">
+                    <div class="hero-image-overlay"></div>
+                    <div class="hero-side-text">
+                        <span>Morocco</span>
+                        <span>Guided Experiences</span>
+                    </div>
+                    <div class="hero-compass">✦</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="most-tours motion-section" id="most-loved">
+        <div class="most-container">
+
+            <div class="section-head">
+                <div>
+                    <span class="section-label" data-i18n="pkg.sel_label">SÉLECTION</span>
+                    <h2 data-i18n="pkg.sel_title">Nos tours les plus aimés</h2>
+                </div>
+
+                <p class="desc" data-i18n="pkg.sel_desc">
+                    Une sélection de circuits appréciés par nos voyageurs pour découvrir
+                    les plus belles facettes du Maroc.
+                </p>
+            </div>
+
+            <div class="tour-timeline">
+
+                <span class="timeline-line"></span>
+                <span class="timeline-progress"></span>
+
+                <article class="tour-item">
+                    <div class="tour-photo">
+                        <img src="images/marrakech-tour.png" alt="Marrakech tour">
+                    </div>
+                    <span class="tour-dot">01</span>
+                    <div class="tour-content">
+                        <span class="tour-duration" data-i18n="pkg.tour1_dur">1 à 3 jours</span>
+                        <h3 data-i18n="pkg.tour1_title">Excursion à Marrakech</h3>
+                        <p data-i18n="pkg.tour1_desc">
+                            Une immersion entre médina, places animées, jardins et paysages
+                            naturels autour de Marrakech.
+                        </p>
+                        <div class="tour-places">
+                            <span>Jamaa El Fna</span>
+                            <span>Ourika</span>
+                            <span>Ouzoud</span>
+                            <span>Agafay</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-item reverse">
+                    <div class="tour-photo">
+                        <img src="images/sahara-tour.png" alt="Sahara desert tour">
+                    </div>
+                    <span class="tour-dot">02</span>
+                    <div class="tour-content">
+                        <span class="tour-duration" data-i18n="pkg.tour2_dur">2 à 4 jours</span>
+                        <h3 data-i18n="pkg.tour2_title">Désert du Sahara</h3>
+                        <p data-i18n="pkg.tour2_desc">
+                            Dunes dorées, balade à dos de chameau, bivouac et nuit sous
+                            les étoiles au cœur de Merzouga.
+                        </p>
+                        <div class="tour-places">
+                            <span>Merzouga</span>
+                            <span>Erg Chebbi</span>
+                            <span>Bivouac</span>
+                            <span data-i18n="pkg.tour2_tag4">Chameau</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-item">
+                    <div class="tour-photo">
+                        <img src="images/chefchaouen-tour.png" alt="Chefchaouen tour">
+                    </div>
+                    <span class="tour-dot">03</span>
+                    <div class="tour-content">
+                        <span class="tour-duration" data-i18n="pkg.tour3_dur">1 à 2 jours</span>
+                        <h3 data-i18n="pkg.tour3_title">Escapade à Chefchaouen</h3>
+                        <p data-i18n="pkg.tour3_desc">
+                            Une escapade dans la ville bleue, entre ruelles calmes,
+                            médina authentique et montagnes du Rif.
+                        </p>
+                        <div class="tour-places">
+                            <span data-i18n="pkg.tour3_tag1">Médina bleue</span>
+                            <span>Rif</span>
+                            <span>Ras El Ma</span>
+                            <span>Panorama</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-item reverse">
+                    <div class="tour-photo">
+                        <img src="images/imperial-cities.png" alt="Villes impériales tour">
+                    </div>
+                    <span class="tour-dot">04</span>
+                    <div class="tour-content">
+                        <span class="tour-duration" data-i18n="pkg.tour4_dur">4 à 7 jours</span>
+                        <h3 data-i18n="pkg.tour4_title">Villes Impériales</h3>
+                        <p data-i18n="pkg.tour4_desc">
+                            Un circuit culturel entre les grandes villes historiques du Maroc,
+                            leurs médinas, monuments et traditions.
+                        </p>
+                        <div class="tour-places">
+                            <span>Fès</span>
+                            <span>Rabat</span>
+                            <span>Meknès</span>
+                            <span>Marrakech</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="tours-catalog motion-section" id="destinations">
+        <div class="tours-catalog-container">
+
+            <div class="section-head">
+                <div>
+                    <span class="section-label">DESTINATIONS</span>
+                    <h2 data-i18n="pkg.cat_title">Trouvez votre prochaine excursion</h2>
+                </div>
+
+                <p class="desc" data-i18n="pkg.cat_desc">
+                    Choisissez une catégorie pour découvrir rapidement les circuits,
+                    les villes et les expériences disponibles selon votre style de voyage.
+                </p>
+            </div>
+
+            <div class="tours-flex">
+
+                <article class="tour-card" data-category="marrakech nature">
+                    <div class="tour-img">
+                        <img src="images/pack-ourika.png" alt="Vallée de l'Ourika">
+                        <span class="tour-tag" data-i18n="pkg.tag_marrakech">Autour de Marrakech</span>
+                        <span class="tour-days" data-i18n="pkg.1day">1 jour</span>
+                    </div>
+                    <div class="tour-info">
+                        <h3 data-i18n="pkg.c1_title">Vallée de l'Ourika</h3>
+                        <p data-i18n="pkg.c1_desc">Une journée nature entre montagnes de l'Atlas, villages berbères et rivière.</p>
+                        <div class="tour-points">
+                            <span>Atlas</span>
+                            <span data-i18n="pkg.c1_tag2">Villages</span>
+                            <span>Nature</span>
+                            <a href="reserver.html" style="text-decoration: none;"><span style="background-color: #c97c2e; color: #fbfaf7;" data-i18n="nav.book">Réserver</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-card" data-category="marrakech">
+                    <div class="tour-img">
+                        <img src="images/pack-marrakech.png" alt="Marrakech excursion">
+                        <span class="tour-tag" data-i18n="pkg.tag_marrakech">Autour de Marrakech</span>
+                        <span class="tour-days" data-i18n="pkg.1day">1 jour</span>
+                    </div>
+                    <div class="tour-info">
+                        <h3 data-i18n="pkg.c2_title">Marrakech, médina & jardins</h3>
+                        <p data-i18n="pkg.c2_desc">Jamaa El Fna, souks, Jardin Majorelle et découverte de la ville rouge.</p>
+                        <div class="tour-points">
+                            <span>Jamaa El Fna</span>
+                            <span>Majorelle</span>
+                            <span data-i18n="pkg.c2_tag3">Médina</span>
+                            <a href="reserver.html" style="text-decoration: none;"><span style="background-color: #c97c2e; color: #fbfaf7;" data-i18n="nav.book">Réserver</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-card" data-category="marrakech nature">
+                    <div class="tour-img">
+                        <img src="images/pack-ouzoud.png" alt="Cascades d'Ouzoud">
+                        <span class="tour-tag" data-i18n="pkg.tag_marrakech">Autour de Marrakech</span>
+                        <span class="tour-days" data-i18n="pkg.1day">1 jour</span>
+                    </div>
+                    <div class="tour-info">
+                        <h3 data-i18n="pkg.c3_title">Cascades d'Ouzoud</h3>
+                        <p data-i18n="pkg.c3_desc">Une excursion vers les plus belles cascades du Maroc avec balade et panorama.</p>
+                        <div class="tour-points">
+                            <span data-i18n="pkg.c3_tag1">Cascades</span>
+                            <span data-i18n="pkg.c3_tag2">Balade</span>
+                            <span>Panorama</span>
+                            <a href="reserver.html" style="text-decoration: none;"><span style="background-color: #c97c2e; color: #fbfaf7;" data-i18n="nav.book">Réserver</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-card" data-category="desert">
+                    <div class="tour-img">
+                        <img src="images/pack-merzouga.png" alt="Désert Merzouga">
+                        <span class="tour-tag" data-i18n="pkg.tag_desert">Ouarzazate & désert</span>
+                        <span class="tour-days" data-i18n="pkg.3days">3 jours</span>
+                    </div>
+                    <div class="tour-info">
+                        <h3 data-i18n="pkg.c4_title">Marrakech vers Merzouga</h3>
+                        <p data-i18n="pkg.c4_desc">Route du sud, dunes de l'Erg Chebbi, balade à chameau et nuit en bivouac.</p>
+                        <div class="tour-points">
+                            <span>Merzouga</span>
+                            <span>Bivouac</span>
+                            <span data-i18n="pkg.c4_tag3">Chameau</span>
+                            <a href="reserver.html" style="text-decoration: none;"><span style="background-color: #c97c2e; color: #fbfaf7;" data-i18n="nav.book">Réserver</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-card" data-category="fes">
+                    <div class="tour-img">
+                        <img src="images/pack-fes.png" alt="Fès tour">
+                        <span class="tour-tag" data-i18n="pkg.tag_fes">Fès & villes impériales</span>
+                        <span class="tour-days" data-i18n="pkg.1day">1 jour</span>
+                    </div>
+                    <div class="tour-info">
+                        <h3 data-i18n="pkg.c5_title">Fès, médina & artisanat</h3>
+                        <p data-i18n="pkg.c5_desc">Médina ancienne, tanneries, souks traditionnels et patrimoine culturel.</p>
+                        <div class="tour-points">
+                            <span data-i18n="pkg.c5_tag1">Médina</span>
+                            <span data-i18n="pkg.c5_tag2">Tanneries</span>
+                            <span>Souks</span>
+                            <a href="reserver.html" style="text-decoration: none;"><span style="background-color: #c97c2e; color: #fbfaf7;" data-i18n="nav.book">Réserver</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-card" data-category="fes nature">
+                    <div class="tour-img">
+                        <img src="images/pack-chefchaouen.png" alt="Chefchaouen">
+                        <span class="tour-tag" data-i18n="pkg.tag_fes">Fès & villes impériales</span>
+                        <span class="tour-days" data-i18n="pkg.1to2days">1 à 2 jours</span>
+                    </div>
+                    <div class="tour-info">
+                        <h3 data-i18n="pkg.c6_title">Fès vers Chefchaouen</h3>
+                        <p data-i18n="pkg.c6_desc">Une escapade vers la ville bleue, entre ruelles calmes et montagnes du Rif.</p>
+                        <div class="tour-points">
+                            <span data-i18n="pkg.c6_tag1">Ville bleue</span>
+                            <span>Rif</span>
+                            <span data-i18n="pkg.c6_tag3">Médina</span>
+                            <a href="reserver.html" style="text-decoration: none;"><span style="background-color: #c97c2e; color: #fbfaf7;" data-i18n="nav.book">Réserver</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-card" data-category="agadir">
+                    <div class="tour-img">
+                        <img src="images/pack-essaouira.png" alt="Essaouira">
+                        <span class="tour-tag" data-i18n="pkg.tag_agadir">Agadir & côte</span>
+                        <span class="tour-days" data-i18n="pkg.1day">1 jour</span>
+                    </div>
+                    <div class="tour-info">
+                        <h3 data-i18n="pkg.c7_title">Essaouira & côte Atlantique</h3>
+                        <p data-i18n="pkg.c7_desc">Médina, port, remparts, plage et ambiance artistique au bord de l'océan.</p>
+                        <div class="tour-points">
+                            <span data-i18n="pkg.c7_tag1">Port</span>
+                            <span data-i18n="pkg.c7_tag2">Plage</span>
+                            <span data-i18n="pkg.c7_tag3">Médina</span>
+                            <a href="reserver.html" style="text-decoration: none;"><span style="background-color: #c97c2e; color: #fbfaf7;" data-i18n="nav.book">Réserver</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-card" data-category="grand desert fes">
+                    <div class="tour-img">
+                        <img src="images/pack-imperial.png" alt="Villes impériales">
+                        <span class="tour-tag" data-i18n="pkg.tag_grand">Grands circuits</span>
+                        <span class="tour-days" data-i18n="pkg.7days">7 jours</span>
+                    </div>
+                    <div class="tour-info">
+                        <h3 data-i18n="pkg.c8_title">Villes impériales & désert</h3>
+                        <p data-i18n="pkg.c8_desc">Casablanca, Rabat, Fès, Marrakech et Sahara dans un circuit complet.</p>
+                        <div class="tour-points">
+                            <span>Rabat</span>
+                            <span>Fès</span>
+                            <span>Sahara</span>
+                            <a href="reserver.html" style="text-decoration: none;"><span style="background-color: #c97c2e; color: #fbfaf7;" data-i18n="nav.book">Réserver</span></a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="tour-steps motion-section" id="tour-steps">
+        <div class="steps-container">
+
+            <div class="steps-head">
+                <div class="trip-label">
+                    <span></span>
+                    <p data-i18n="pkg.steps_label">ÉTAPES</p>
+                    <span></span>
+                </div>
+                <h2 data-i18n="pkg.steps_title">Comment nous organisons votre voyage</h2>
+            </div>
+
+            <div class="steps-timeline">
+
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 data-i18n="pkg.step1_title">Choisir la destination</h3>
+                        <p class="desc" data-i18n="pkg.step1_desc">Vous sélectionnez la ville ou le circuit que vous souhaitez découvrir.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 data-i18n="pkg.step2_title">Adapter le programme</h3>
+                        <p class="desc" data-i18n="pkg.step2_desc">Nous ajustons les arrêts, la durée et le rythme selon vos envies.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 data-i18n="pkg.step3_title">Départ accompagné</h3>
+                        <p class="desc" data-i18n="pkg.step3_desc">Votre chauffeur ou guide vous accompagne avec un itinéraire clair.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 data-i18n="pkg.step4_title">Profiter du voyage</h3>
+                        <p class="desc" data-i18n="pkg.step4_desc">Vous découvrez le Maroc sans stress, avec une organisation simple et fluide.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="gastro-cta motion-section">
+        <div class="cta-container">
+
+            <div class="cta-label">
+                <span></span>
+                <p style="text-transform: uppercase;" data-i18n="pkg_cta.label">Vous avez trouvé votre prochaine aventure ?</p>
+                <span></span>
+            </div>
+
+            <h2 data-i18n="pkg_cta.title">
+                Passez à l'étape suivante et envoyez-nous vos dates, votre destination et le nombre de voyageurs.
+            </h2>
+
+            <a href="reserver.html" class="cta-btn" data-i18n="pkg_cta.btn">
+                Aller à la réservation →
+            </a>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-col footer-brand">
+            <div class="footer-logo">
+                <img src="images/azul.png" width="75px" height="75px" alt="azulVoyage">
+            </div>
+            <span class="footer-label" data-i18n="footer.slogan">Votre partenaire pour découvrir le Maroc autrement.</span>
+            <p class="footer-label" data-i18n="footer.desc">Tours & transport marocain premium.</p>
+            <div class="note-tag small" data-i18n="footer.note">Votre aventure commence ici</div>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-i18n="footer.explore_title">Explorer</h4>
+            <ul>
+                <li><a href="exploreMaroc.html" data-i18n="footer.explore_maroc">Découvrir le Maroc</a></li>
+                <li><a href="transport.html" data-i18n="footer.explore_transport">Transport</a></li>
+                <li><a href="package.html" data-i18n="footer.explore_packages">Tours & Packages</a></li>
+                <li><a href="contact.html" data-i18n="footer.explore_about">À propos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-i18n="footer.services_title">Services</h4>
+            <ul>
+                <li><a href="#" data-i18n="footer.services_airport">Transfert Aéroport</a></li>
+                <li><a href="#" data-i18n="footer.services_driver">Chauffeur Privé</a></li>
+                <li><a href="#" data-i18n="footer.services_desert">Tours Désert</a></li>
+                <li><a href="#" data-i18n="footer.services_booking">Réservations</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+            <h4 data-i18n="footer.newsletter_title">Newsletter</h4>
+            <p data-i18n="footer.newsletter_desc">Routes saisonnières & offres.</p>
+            <form action="https://formspree.io/f/{form_id}" method="post" class="newsletter-form">
+                <input type="email" placeholder="votre@email" data-i18n-placeholder="footer.newsletter_placeholder">
+                <button class="button" data-i18n="footer.newsletter_btn">Rejoindre</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"><i class="ti ti-brand-instagram"></i></a>
+                <a href="#"><i class="ti ti-brand-facebook"></i></a>
+                <a href="#"><i class="ti ti-brand-youtube"></i></a>
+                <a href="#"><i class="ti ti-brand-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="action">
+            <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+                <symbol id="icon-arrow-up-hand" viewBox="0 0 512 512">
+                    <g fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M214 384 L214 184 L164 184 L256 80 L348 184 L298 184 L298 384 Q298 402 284 408 L236 416 Q220 414 214 384 Z" />
+                        <path d="M228 408 L242 434" /><path d="M258 406 L270 430" /><path d="M286 404 L296 424" />
+                        <path d="M186 210 L174 186" /><path d="M206 210 L196 186" /><path d="M224 210 L216 186" />
+                        <path d="M308 210 L320 190" /><path d="M326 210 L336 196" /><path d="M340 210 L346 200" />
+                    </g>
+                </symbol>
+            </svg>
+            <a href="#top" class="float-btn whatsapp"><svg class="arrow-icon"><use href="#icon-arrow-up-hand"></use></svg></a>
+            <a href="#" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="50px" height="50px" class="float-btn whatsapp whtsp-color"></a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menuToggle");
+            const navLinks = document.getElementById("navLinks");
+            if (!menuToggle || !navLinks) return;
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+                menuToggle.classList.toggle("active");
+            });
+            navLinks.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    navLinks.classList.remove("active");
+                    menuToggle.classList.remove("active");
+                });
+            });
+        });
+    </script>
+    <script type="module" src="motion-animations.js"></script>
+    <script src="js/i18n.js" defer></script>
+
+</body>
+
+</html>

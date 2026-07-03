@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azul voyage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+</head>
+
+<body id="top">
+
+        <header class="navbar">
+    <div class="nav-logo">
+        <a href="index-en.html" class="logo"><img src="images/azul.png" width="55px" height="55px"
+                alt="azulVoyage"></a>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="index-en.html">Home</a>
+        <a href="exploreMaroc-en.html">Discover Morocco</a>
+        <a href="transport-en.html">Transport</a>
+        <a href="package-en.html">Tours & Packages</a>
+        <a href="contact-en.html">About</a>
+    </nav>
+
+    <a href="reserver-en.html" class="nav-btn">Book Now</a>
+
+    <button class="lang-toggle" id="langToggle">
+        FR
+    </button>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+
+<section class="booking-section motion-section" id="reservation">
+    <div class="booking-container">
+
+        <div class="booking-image">
+            <img src="images/riad-reservation.png" alt="Traditional riad in Morocco">
+        </div>
+
+        <div class="booking-form-box">
+            <span class="explore-label">BOOKING</span>
+
+            <h2>Book your trip to Morocco</h2>
+
+            <p class="booking-p">
+                Fill in your information and we will contact you quickly to confirm your booking.
+            </p>
+
+            <form action="https://formspree.io/f/{form_id}" method="post" class="booking-form">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full name</label>
+                        <input type="text" id="name" placeholder="Your name">
+                        <span id="nameError" class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="email" placeholder="Your email">
+                        <span id="emailError" class="error"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" id="phone" placeholder="Your phone number">
+                        <span id="phoneError" class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Service</label>
+                        <select id="service">
+                            <option value="">Choose a service</option>
+                            <option>Tour + transport</option>
+                            <option>Private transport</option>
+                            <option>Excursion</option>
+                            <option>Full package</option>
+                        </select>
+                        <span id="serviceError" class="error"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Destination</label>
+                        <select id="destination">
+                            <option value="">Choose a destination</option>
+                            <option>Marrakech</option>
+                            <option>Merzouga</option>
+                            <option>Fès</option>
+                            <option>Chefchaouen</option>
+                            <option>Essaouira</option>
+                            <option>Ouarzazate</option>
+                        </select>
+                        <span id="destinationError" class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Departure city</label>
+                        <input type="text" id="departCity" placeholder="Ex: Casablanca">
+                        <span id="departCityError" class="error"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Travel date</label>
+                        <input type="date" id="date">
+                        <span id="dateError" class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Travelers</label>
+                        <select id="travelers">
+                            <option>1 person</option>
+                            <option selected>2 people</option>
+                            <option>3 people</option>
+                            <option>4 people</option>
+                            <option>5+ people</option>
+                        </select>
+                        <span id="travelersError" class="error"></span>
+                    </div>
+                </div>
+
+                <div class="form-group full">
+                    <label>Special requests</label>
+                    <textarea id="message" placeholder="Describe your ideal trip..."></textarea>
+                    <span id="messageError" class="error"></span>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="submit-btn" onclick="validerForm()">
+                        Send request
+                    </button>
+
+                    <button type="button" class="save-btn">
+                        Save
+                    </button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+<footer class="footer">
+
+    <div class="footer-col footer-brand">
+        <div class="footer-logo">
+            <img src="images/azul.png" width="75px" height="75px" alt="azulVoyage">
+        </div>
+        <span class="footer-label">Your partner for discovering Morocco differently.</span>
+        <p class="footer-label">Premium Moroccan tours & transport.</p>
+        <div class="note-tag small">Your adventure starts here</div>
+    </div>
+
+    <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+            <li><a href="exploreMaroc-en.html">Discover Morocco</a></li>
+            <li><a href="transport-en.html">Transport</a></li>
+            <li><a href="package-en.html">Tours & Packages</a></li>
+            <li><a href="contact-en.html">About</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+            <li><a href="#">Airport Transfer</a></li>
+            <li><a href="#">Private Driver</a></li>
+            <li><a href="#">Desert Tours</a></li>
+            <li><a href="#">Bookings</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Seasonal routes & offers.</p>
+        <form action="https://formspree.io/f/{form_id}" method="post" class="newsletter-form">
+            <input type="email" placeholder="your@email">
+            <button class="button">Join</button>
+        </form>
+        <div class="social-icons">
+            <a href="#"><i class="ti ti-brand-instagram"></i></a>
+            <a href="#"><i class="ti ti-brand-facebook"></i></a>
+            <a href="#"><i class="ti ti-brand-youtube"></i></a>
+            <a href="#"><i class="ti ti-brand-linkedin"></i></a>
+        </div>
+    </div>
+
+    <div class="action">
+
+        <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+            <symbol id="icon-arrow-up-hand" viewBox="0 0 512 512">
+                <g fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M214 384
+           L214 184
+           L164 184
+           L256 80
+           L348 184
+           L298 184
+           L298 384
+           Q298 402 284 408
+           L236 416
+           Q220 414 214 384 Z" />
+
+                    <path d="M228 408 L242 434" />
+                    <path d="M258 406 L270 430" />
+                    <path d="M286 404 L296 424" />
+
+                    <path d="M186 210 L174 186" />
+                    <path d="M206 210 L196 186" />
+                    <path d="M224 210 L216 186" />
+
+                    <path d="M308 210 L320 190" />
+                    <path d="M326 210 L336 196" />
+                    <path d="M340 210 L346 200" />
+                </g>
+            </symbol>
+        </svg>
+
+        <a href="#top" class="float-btn whatsapp"><svg class="arrow-icon">
+                <use href="#icon-arrow-up-hand"></use>
+            </svg>
+        </a>
+
+        <a href="#" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="50px" height="50px"
+                class="float-btn whatsapp whtsp-color"></a>
+
+    </div>
+</footer>
+
+
+    <script src="script.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".testSwiper", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: { slidesPerView: 1 },
+                700: { slidesPerView: 2 },
+                1000: { slidesPerView: 3 }
+            }
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menuToggle");
+            const navLinks = document.getElementById("navLinks");
+
+            if (!menuToggle || !navLinks) return;
+
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+                menuToggle.classList.toggle("active");
+            });
+
+            navLinks.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    navLinks.classList.remove("active");
+                    menuToggle.classList.remove("active");
+                });
+            });
+        });
+    </script>
+
+
+
+    <script type="module" src="motion-animations.js"></script>
+    <script src="script.js" defer></script>
+
+
+</body>
+
+</html>

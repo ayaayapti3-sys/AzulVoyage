@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azul Voyage</title>
+    <link rel="icon" href="images/azul.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+
+<body id="top">
+
+    <header class="navbar">
+        <div class="nav-logo">
+            <a href="index.html" class="logo"><img src="images/azul.png" width="55px" height="55px" alt="azulVoyage"></a>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" data-i18n="nav.home">Accueil</a>
+            <a href="exploreMaroc.html" data-i18n="nav.explore">Découvrir le Maroc</a>
+            <a href="transport.html" data-i18n="nav.transport">Transport</a>
+            <a href="package.html" data-i18n="nav.packages">Tours & Packages</a>
+            <a href="contact.html" data-i18n="nav.about">À propos</a>
+        </nav>
+
+        <a href="reserver.html" class="nav-btn" data-i18n="nav.book">Réserver</a>
+             <button class="lang-toggle" id="langToggle">
+            EN
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <section class="about-hero motion-section">
+        <img src="images/about-hero.png" alt="" class="hero-bg">
+        <div class="about-hero-overlay"></div>
+
+        <div class="about-hero-content">
+            <span class="hero-tagC" data-i18n="about.label">À PROPOS</span>
+            <h1 data-i18n="about.title">Les personnes derrière le voyage</h1>
+            <p data-i18n="about.desc">
+                Une équipe locale passionnée, prête à créer des expériences marocaines
+                authentiques, confortables et mémorables.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="about-story motion-section">
+        <div class="about-container story-flex">
+
+            <div class="story-text">
+                <span class="section-label" data-i18n="about.story_label">NOTRE HISTOIRE</span>
+                <h2 data-i18n="about.story_title">Nés d'un amour pour la route</h2>
+                <p class="desc" data-i18n="about.story_desc1">
+                    Azul Travel est né d'une envie simple : faire découvrir le Maroc autrement.
+                    Des médinas vivantes aux dunes du Sahara, nous imaginons des voyages
+                    sur mesure, humains et bien organisés.
+                </p>
+                <p class="desc" data-i18n="about.story_desc2">
+                    Notre force vient de notre connaissance du terrain, de nos partenaires
+                    locaux et de notre attention aux petits détails qui rendent chaque voyage unique.
+                </p>
+                <div class="story-note">
+                    <span class="note-icon bg-icon">✦</span>
+                    <p data-i18n="about.story_note">
+                        Chaque itinéraire est préparé avec soin, en gardant le confort,
+                        l'authenticité et le rythme de chaque voyageur.
+                    </p>
+                </div>
+            </div>
+
+            <div class="story-image">
+                <img src="images/about-story.png" alt="Équipe Azul Travel" class="why-photo">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact-section motion-section">
+        <div class="about-container contact-flex">
+
+            <div class="contact-info">
+                <div class="contact-head">
+                    <div>
+                        <span class="section-label" data-i18n="contact.label">CONTACT</span>
+                        <h2 data-i18n="contact.title">On vous répond rapidement</h2>
+                    </div>
+                    <p class="desc" data-i18n="contact.desc">
+                        Une question, une réservation ou une idée de voyage ?
+                        Envoyez-nous un message, notre équipe vous accompagne.
+                    </p>
+                </div>
+
+                <div class="contact-body">
+
+                    <div class="contact-info">
+                        <div class="contact-list">
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="ti ti-phone"></i></div>
+                                <div>
+                                    <h4 data-i18n="contact.phone">Téléphone</h4>
+                                    <span>+212 6 00 00 00 00</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="ti ti-mail"></i></div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <span>azulvoyage@gmail.com</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="ti ti-map-pin"></i></div>
+                                <div>
+                                    <h4 data-i18n="contact.office">Bureau</h4>
+                                    <span>Casablanca, Maroc</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="ti ti-clock"></i></div>
+                                <div>
+                                    <h4 data-i18n="contact.hours">Horaires</h4>
+                                    <span data-i18n="contact.hours_val">Tous les jours · 8h00 - 21h00</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <form action="https://formspree.io/f/{form_id}" method="post" class="contact-form" id="contactForm">
+                        <h3 data-i18n="contact.form_title">Envoyer un message</h3>
+
+                        <div class="form-group">
+                            <label data-i18n="contact.form_name">Nom</label>
+                            <input type="text" id="name" placeholder="Votre nom" data-i18n-placeholder="contact.form_name_ph">
+                            <span id="nameError" class="error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" id="email" placeholder="Votre email" data-i18n-placeholder="contact.form_email_ph">
+                            <span id="emailError" class="error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea id="message" placeholder="Votre message" data-i18n-placeholder="contact.form_msg_ph"></textarea>
+                            <span id="messageError" class="error"></span>
+                        </div>
+
+                        <button type="button" class="send-btn" onclick="contactForm()">
+                            <span data-i18n="contact.form_send">Envoyer le message</span>
+                            <i class="ti ti-send"></i>
+                        </button>
+                    </form>
+
+                </div>
+
+            </div>
+    
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-col footer-brand">
+            <div class="footer-logo">
+                <img src="images/azul.png" width="75px" height="75px" alt="azulVoyage">
+            </div>
+            <span class="footer-label" data-i18n="footer.slogan">Votre partenaire pour découvrir le Maroc autrement.</span>
+            <p class="footer-label" data-i18n="footer.desc">Tours & transport marocain premium.</p>
+            <div class="note-tag small" data-i18n="footer.note">Votre aventure commence ici</div>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-i18n="footer.explore_title">Explorer</h4>
+            <ul>
+                <li><a href="exploreMaroc.html" data-i18n="footer.explore_maroc">Découvrir le Maroc</a></li>
+                <li><a href="transport.html" data-i18n="footer.explore_transport">Transport</a></li>
+                <li><a href="package.html" data-i18n="footer.explore_packages">Tours & Packages</a></li>
+                <li><a href="contact.html" data-i18n="footer.explore_about">À propos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-i18n="footer.services_title">Services</h4>
+            <ul>
+                <li><a href="#" data-i18n="footer.services_airport">Transfert Aéroport</a></li>
+                <li><a href="#" data-i18n="footer.services_driver">Chauffeur Privé</a></li>
+                <li><a href="#" data-i18n="footer.services_desert">Tours Désert</a></li>
+                <li><a href="#" data-i18n="footer.services_booking">Réservations</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+            <h4 data-i18n="footer.newsletter_title">Newsletter</h4>
+            <p data-i18n="footer.newsletter_desc">Routes saisonnières & offres.</p>
+            <form action="https://formspree.io/f/{form_id}" method="post" class="newsletter-form">
+                <input type="email" placeholder="votre@email" data-i18n-placeholder="footer.newsletter_placeholder">
+                <button class="button" data-i18n="footer.newsletter_btn">Rejoindre</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"><i class="ti ti-brand-instagram"></i></a>
+                <a href="#"><i class="ti ti-brand-facebook"></i></a>
+                <a href="#"><i class="ti ti-brand-youtube"></i></a>
+                <a href="#"><i class="ti ti-brand-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="action">
+            <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+                <symbol id="icon-arrow-up-hand" viewBox="0 0 512 512">
+                    <g fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M214 384 L214 184 L164 184 L256 80 L348 184 L298 184 L298 384 Q298 402 284 408 L236 416 Q220 414 214 384 Z" />
+                        <path d="M228 408 L242 434" /><path d="M258 406 L270 430" /><path d="M286 404 L296 424" />
+                        <path d="M186 210 L174 186" /><path d="M206 210 L196 186" /><path d="M224 210 L216 186" />
+                        <path d="M308 210 L320 190" /><path d="M326 210 L336 196" /><path d="M340 210 L346 200" />
+                    </g>
+                </symbol>
+            </svg>
+            <a href="#top" class="float-btn whatsapp"><svg class="arrow-icon"><use href="#icon-arrow-up-hand"></use></svg></a>
+            <a href="#" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="50px" height="50px" class="float-btn whatsapp whtsp-color"></a>
+        </div>
+    </footer>
+
+    <div id="success-popup" class="success-popup">
+    <div class="popup-box">
+        <div class="check-icon">
+            <i class="ti ti-check"></i>
+        </div>
+        <h3 data-i18n="contact.popup_title">Message envoyé !</h3>
+        <p data-i18n="contact.popup_desc">
+            Merci pour votre demande.
+            Notre équipe vous répondra très bientôt.
+        </p>
+        <button onclick="closePopup()" data-i18n="contact.popup_close">
+            Fermer
+        </button>
+    </div>
+</div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menuToggle");
+            const navLinks = document.getElementById("navLinks");
+            if (!menuToggle || !navLinks) return;
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+                menuToggle.classList.toggle("active");
+            });
+            navLinks.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    navLinks.classList.remove("active");
+                    menuToggle.classList.remove("active");
+                });
+            });
+        });
+    </script>
+
+    <script type="module" src="motion-animations.js"></script>
+    <script src="script.js" defer></script>
+    <script src="js/i18n.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azul voyage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+</head>
+
+<body id="top">
+
+        <header class="navbar">
+    <div class="nav-logo">
+        <a href="index-en.html" class="logo"><img src="images/azul.png" width="55px" height="55px"
+                alt="azulVoyage"></a>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="index-en.html">Home</a>
+        <a href="exploreMaroc-en.html">Discover Morocco</a>
+        <a href="transport-en.html">Transport</a>
+        <a href="package-en.html">Tours & Packages</a>
+        <a href="contact-en.html">About</a>
+    </nav>
+
+    <a href="reserver-en.html" class="nav-btn">Book Now</a>
+
+    <button class="lang-toggle" id="langToggle">
+        FR
+    </button>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+
+<section class="tours-hero motion-section" id="tours-hero">
+    <div class="tours-hero-container">
+
+        <div class="tours-hero-content">
+            <div class="explore-label">
+                <span>TOURS & PACKAGES</span>
+            </div>
+
+            <h1>
+                Explore Morocco<br>
+                at your own pace
+            </h1>
+
+            <p class="desc">
+                From day trips to multi-day circuits,
+                discover cities, waterfalls, mountains and the desert
+                through carefully organized experiences.
+            </p>
+
+            <div class="hero-destinations">
+                <span>Medinas</span>
+                <span>Waterfalls</span>
+                <span>Desert</span>
+                <span>Atlas</span>
+            </div>
+
+            <div class="hero-actions">
+                <a href="#most-loved" class="btn-primaryE">Discover tours</a>
+                <a href="#destinations" class="btn-secondary">View destinations</a>
+            </div>
+        </div>
+
+        <div class="tours-hero-visual">
+            <div class="hero-image-wrap">
+                <img src="images/tours-hero.png" alt="Tours and packages in Morocco">
+
+                <div class="hero-image-overlay"></div>
+
+                <div class="hero-side-text">
+                    <span>Morocco</span>
+                    <span>Guided Experiences</span>
+                </div>
+
+                <div class="hero-compass">
+                    ✦
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="most-tours motion-section" id="most-loved">
+    <div class="most-container">
+
+        <div class="section-head">
+            <div>
+                <span class="section-label">FEATURED</span>
+                <h2>Our most loved tours</h2>
+            </div>
+
+            <p class="desc">
+                A selection of tours loved by our travelers, showcasing
+                the very best of Morocco.
+            </p>
+        </div>
+
+        <div class="tour-timeline">
+
+            <span class="timeline-line"></span>
+            <span class="timeline-progress"></span>
+
+            <!-- TOUR 01 -->
+            <article class="tour-item">
+                <div class="tour-photo">
+                    <img src="images/marrakech-tour.png" alt="Marrakech tour">
+                </div>
+
+                <span class="tour-dot">01</span>
+
+                <div class="tour-content">
+                    <span class="tour-duration">1 to 3 days</span>
+                    <h3>Marrakech Escape</h3>
+                    <p>
+                        An unforgettable journey through the medina, lively squares,
+                        beautiful gardens and breathtaking landscapes around Marrakech.
+                    </p>
+
+                    <div class="tour-places">
+                        <span>Jemaa El-Fna</span>
+                        <span>Ourika</span>
+                        <span>Ouzoud</span>
+                        <span>Agafay</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- TOUR 02 -->
+            <article class="tour-item reverse">
+                <div class="tour-photo">
+                    <img src="images/sahara-tour.png" alt="Sahara desert tour">
+                </div>
+
+                <span class="tour-dot">02</span>
+
+                <div class="tour-content">
+                    <span class="tour-duration">2 to 4 days</span>
+                    <h3>Sahara Desert</h3>
+                    <p>
+                        Golden dunes, camel rides, desert camps and unforgettable
+                        nights beneath the stars in Merzouga.
+                    </p>
+
+                    <div class="tour-places">
+                        <span>Merzouga</span>
+                        <span>Erg Chebbi</span>
+                        <span>Desert Camp</span>
+                        <span>Camel Ride</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- TOUR 03 -->
+            <article class="tour-item">
+                <div class="tour-photo">
+                    <img src="images/chefchaouen-tour.png" alt="Chefchaouen tour">
+                </div>
+
+                <span class="tour-dot">03</span>
+
+                <div class="tour-content">
+                    <span class="tour-duration">1 to 2 days</span>
+                    <h3>Chefchaouen Getaway</h3>
+                    <p>
+                        Escape to Morocco's Blue City, with peaceful streets,
+                        an authentic medina and the stunning Rif Mountains.
+                    </p>
+
+                    <div class="tour-places">
+                        <span>Blue Medina</span>
+                        <span>Rif Mountains</span>
+                        <span>Ras El Ma</span>
+                        <span>Panorama</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- TOUR 04 -->
+            <article class="tour-item reverse">
+                <div class="tour-photo">
+                    <img src="images/imperial-cities.png" alt="Imperial Cities tour">
+                </div>
+
+                <span class="tour-dot">04</span>
+
+                <div class="tour-content">
+                    <span class="tour-duration">4 to 7 days</span>
+                    <h3>Imperial Cities</h3>
+                    <p>
+                        A cultural journey through Morocco's historic imperial cities,
+                        their medinas, monuments and timeless traditions.
+                    </p>
+
+                    <div class="tour-places">
+                        <span>Fès</span>
+                        <span>Rabat</span>
+                        <span>Meknès</span>
+                        <span>Marrakech</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="tours-catalog motion-section" id="destinations">
+    <div class="tours-catalog-container">
+
+        <div class="section-head">
+            <div>
+                <span class="section-label">DESTINATIONS</span>
+                <h2>Find your next excursion</h2>
+            </div>
+
+            <p class="desc">
+                Choose a category to quickly discover tours,
+                cities and experiences available according to your travel style.
+            </p>
+        </div>
+
+        <div class="tours-flex">
+
+            <article class="tour-card" data-category="marrakech nature">
+                <div class="tour-img">
+                    <img src="images/pack-ourika.png" alt="Ourika Valley">
+                    <span class="tour-tag">Around Marrakech</span>
+                    <span class="tour-days">1 day</span>
+                </div>
+
+                <div class="tour-info">
+                    <h3>Ourika Valley</h3>
+                    <p>
+                        A nature day trip between the Atlas Mountains, Berber villages and river.
+                    </p>
+
+                    <div class="tour-points">
+                        <span>Atlas</span>
+                        <span>Villages</span>
+                        <span>Nature</span>
+                        <a href="reserver-en.html" style="text-decoration: none;"><span
+                                style="background-color: #c97c2e; color: #fbfaf7;">Book Now</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tour-card" data-category="marrakech">
+                <div class="tour-img">
+                    <img src="images/pack-marrakech.png" alt="Marrakech excursion">
+                    <span class="tour-tag">Around Marrakech</span>
+                    <span class="tour-days">1 day</span>
+                </div>
+
+                <div class="tour-info">
+                    <h3>Marrakech, medina & gardens</h3>
+                    <p>
+                        Jemaa El-Fna, souks, Majorelle Garden and discovery of the Red City.
+                    </p>
+
+                    <div class="tour-points">
+                        <span>Jemaa El-Fna</span>
+                        <span>Majorelle</span>
+                        <span>Medina</span>
+                        <a href="reserver-en.html" style="text-decoration: none;"><span
+                                style="background-color: #c97c2e; color: #fbfaf7;">Book Now</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tour-card" data-category="marrakech nature">
+                <div class="tour-img">
+                    <img src="images/pack-ouzoud.png" alt="Ouzoud Waterfalls">
+                    <span class="tour-tag">Around Marrakech</span>
+                    <span class="tour-days">1 day</span>
+                </div>
+
+                <div class="tour-info">
+                    <h3>Ouzoud Waterfalls</h3>
+                    <p>
+                        An excursion to Morocco’s most beautiful waterfalls with walks and panoramic views.
+                    </p>
+
+                    <div class="tour-points">
+                        <span>Waterfalls</span>
+                        <span>Walk</span>
+                        <span>Panorama</span>
+                        <a href="reserver-en.html" style="text-decoration: none;"><span
+                                style="background-color: #c97c2e; color: #fbfaf7;">Book Now</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tour-card" data-category="desert">
+                <div class="tour-img">
+                    <img src="images/pack-merzouga.png" alt="Merzouga Desert">
+                    <span class="tour-tag">Ouarzazate & desert</span>
+                    <span class="tour-days">3 days</span>
+                </div>
+
+                <div class="tour-info">
+                    <h3>Marrakech to Merzouga</h3>
+                    <p>
+                        Southern road, Erg Chebbi dunes, camel ride and overnight desert camp.
+                    </p>
+
+                    <div class="tour-points">
+                        <span>Merzouga</span>
+                        <span>Desert Camp</span>
+                        <span>Camel Ride</span>
+                        <a href="reserver-en.html" style="text-decoration: none;"><span
+                                style="background-color: #c97c2e; color: #fbfaf7;">Book Now</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tour-card" data-category="fes">
+                <div class="tour-img">
+                    <img src="images/pack-fes.png" alt="Fes tour">
+                    <span class="tour-tag">Fès & imperial cities</span>
+                    <span class="tour-days">1 day</span>
+                </div>
+
+                <div class="tour-info">
+                    <h3>Fès, medina & craftsmanship</h3>
+                    <p>
+                        Ancient medina, tanneries, traditional souks and cultural heritage.
+                    </p>
+
+                    <div class="tour-points">
+                        <span>Medina</span>
+                        <span>Tanneries</span>
+                        <span>Souks</span>
+                        <a href="reserver-en.html" style="text-decoration: none;"><span
+                                style="background-color: #c97c2e; color: #fbfaf7;">Book Now</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tour-card" data-category="fes nature">
+                <div class="tour-img">
+                    <img src="images/pack-chefchaouen.png" alt="Chefchaouen">
+                    <span class="tour-tag">Fès & imperial cities</span>
+                    <span class="tour-days">1 to 2 days</span>
+                </div>
+
+                <div class="tour-info">
+                    <h3>Fès to Chefchaouen</h3>
+                    <p>
+                        A getaway to the Blue City, between peaceful alleys and the Rif Mountains.
+                    </p>
+
+                    <div class="tour-points">
+                        <span>Blue City</span>
+                        <span>Rif</span>
+                        <span>Medina</span>
+                        <a href="reserver-en.html" style="text-decoration: none;"><span
+                                style="background-color: #c97c2e; color: #fbfaf7;">Book Now</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tour-card" data-category="agadir">
+                <div class="tour-img">
+                    <img src="images/pack-essaouira.png" alt="Essaouira">
+                    <span class="tour-tag">Agadir & coast</span>
+                    <span class="tour-days">1 day</span>
+                </div>
+
+                <div class="tour-info">
+                    <h3>Essaouira & Atlantic coast</h3>
+                    <p>
+                        Medina, port, ramparts, beach and artistic atmosphere by the ocean.
+                    </p>
+
+                    <div class="tour-points">
+                        <span>Port</span>
+                        <span>Beach</span>
+                        <span>Medina</span>
+                        <a href="reserver-en.html" style="text-decoration: none;"><span
+                                style="background-color: #c97c2e; color: #fbfaf7;">Book Now</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tour-card" data-category="grand desert fes">
+                <div class="tour-img">
+                    <img src="images/pack-imperial.png" alt="Imperial cities">
+                    <span class="tour-tag">Grand tours</span>
+                    <span class="tour-days">7 days</span>
+                </div>
+
+                <div class="tour-info">
+                    <h3>Imperial cities & desert</h3>
+                    <p>
+                        Casablanca, Rabat, Fès, Marrakech and the Sahara in one complete tour.
+                    </p>
+
+                    <div class="tour-points">
+                        <span>Rabat</span>
+                        <span>Fès</span>
+                        <span>Sahara</span>
+                        <a href="reserver-en.html" style="text-decoration: none;"><span
+                                style="background-color: #c97c2e; color: #fbfaf7;">Book Now</span></a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="tour-steps motion-section" id="tour-steps">
+    <div class="steps-container">
+
+        <div class="steps-head">
+            <div class="trip-label">
+                <span></span>
+                <p>STEPS</p>
+                <span></span>
+            </div>
+
+            <h2>How we organize your trip</h2>
+        </div>
+
+        <div class="steps-timeline">
+
+            <div class="step-item">
+                <div class="step-number">1</div>
+
+                <div class="step-content">
+                    <h3>Choose the destination</h3>
+                    <p class="desc">
+                        You select the city or tour you would like to discover.
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-number">2</div>
+
+                <div class="step-content">
+                    <h3>Customize the program</h3>
+                    <p class="desc">
+                        We adjust the stops, duration and pace according to your preferences.
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-number">3</div>
+
+                <div class="step-content">
+                    <h3>Guided departure</h3>
+                    <p class="desc">
+                        Your driver or guide accompanies you with a clear itinerary.
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-number">4</div>
+
+                <div class="step-content">
+                    <h3>Enjoy the journey</h3>
+                    <p class="desc">
+                        You discover Morocco stress-free, with simple and smooth organization.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="gastro-cta motion-section">
+    <div class="cta-container">
+
+        <div class="cta-label">
+            <span></span>
+            <p style="text-transform: uppercase;">Have you found your next adventure?</p>
+            <span></span>
+        </div>
+
+        <h2>
+            Take the next step and send us your dates, destination and number of travelers.
+        </h2>
+
+        <a href="reserver-en.html" class="cta-btn">
+            Go to booking
+            <span>→</span>
+        </a>
+
+    </div>
+</section>
+
+
+
+
+
+<footer class="footer">
+
+    <div class="footer-col footer-brand">
+        <div class="footer-logo">
+            <img src="images/azul.png" width="75px" height="75px" alt="azulVoyage">
+        </div>
+        <span class="footer-label">Your partner for discovering Morocco differently.</span>
+        <p class="footer-label">Premium Moroccan tours & transport.</p>
+        <div class="note-tag small">Your adventure starts here</div>
+    </div>
+
+    <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+            <li><a href="exploreMaroc-en.html">Discover Morocco</a></li>
+            <li><a href="transport-en.html">Transport</a></li>
+            <li><a href="package-en.html">Tours & Packages</a></li>
+            <li><a href="contact-en.html">About</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+            <li><a href="#">Airport Transfer</a></li>
+            <li><a href="#">Private Driver</a></li>
+            <li><a href="#">Desert Tours</a></li>
+            <li><a href="#">Bookings</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Seasonal routes & offers.</p>
+        <form action="https://formspree.io/f/{form_id}" method="post" class="newsletter-form">
+            <input type="email" placeholder="your@email">
+            <button class="button">Join</button>
+        </form>
+        <div class="social-icons">
+            <a href="#"><i class="ti ti-brand-instagram"></i></a>
+            <a href="#"><i class="ti ti-brand-facebook"></i></a>
+            <a href="#"><i class="ti ti-brand-youtube"></i></a>
+            <a href="#"><i class="ti ti-brand-linkedin"></i></a>
+        </div>
+    </div>
+
+    <div class="action">
+
+        <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+            <symbol id="icon-arrow-up-hand" viewBox="0 0 512 512">
+                <g fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M214 384
+           L214 184
+           L164 184
+           L256 80
+           L348 184
+           L298 184
+           L298 384
+           Q298 402 284 408
+           L236 416
+           Q220 414 214 384 Z" />
+
+                    <path d="M228 408 L242 434" />
+                    <path d="M258 406 L270 430" />
+                    <path d="M286 404 L296 424" />
+
+                    <path d="M186 210 L174 186" />
+                    <path d="M206 210 L196 186" />
+                    <path d="M224 210 L216 186" />
+
+                    <path d="M308 210 L320 190" />
+                    <path d="M326 210 L336 196" />
+                    <path d="M340 210 L346 200" />
+                </g>
+            </symbol>
+        </svg>
+
+        <a href="#top" class="float-btn whatsapp"><svg class="arrow-icon">
+                <use href="#icon-arrow-up-hand"></use>
+            </svg>
+        </a>
+
+        <a href="#" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="50px" height="50px"
+                class="float-btn whatsapp whtsp-color"></a>
+
+    </div>
+</footer>
+
+
+    <script src="script.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".testSwiper", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: { slidesPerView: 1 },
+                700: { slidesPerView: 2 },
+                1000: { slidesPerView: 3 }
+            }
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menuToggle");
+            const navLinks = document.getElementById("navLinks");
+
+            if (!menuToggle || !navLinks) return;
+
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+                menuToggle.classList.toggle("active");
+            });
+
+            navLinks.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    navLinks.classList.remove("active");
+                    menuToggle.classList.remove("active");
+                });
+            });
+        });
+    </script>
+
+
+
+    <script type="module" src="motion-animations.js"></script>
+    <script src="script.js" defer></script>
+
+
+</body>
+
+</html>

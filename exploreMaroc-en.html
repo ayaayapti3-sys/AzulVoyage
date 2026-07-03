@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Morocco</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+
+<body id="top">
+
+        <header class="navbar">
+    <div class="nav-logo">
+        <a href="index-en.html" class="logo"><img src="images/azul.png" width="55px" height="55px"
+                alt="azulVoyage"></a>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="index-en.html">Home</a>
+        <a href="exploreMaroc-en.html">Discover Morocco</a>
+        <a href="transport-en.html">Transport</a>
+        <a href="package-en.html">Tours & Packages</a>
+        <a href="contact-en.html">About</a>
+    </nav>
+
+    <a href="reserver-en.html" class="nav-btn">Book Now</a>
+
+    <button class="lang-toggle" id="langToggle">
+        FR
+    </button>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+<section class="exploreMaroc motion-section">
+
+    <div class="explore-content">
+        <span class="explore-label">Discover Morocco</span>
+
+        <h1>
+            Explore <br>
+            Morocco
+            <em>Differently</em>
+        </h1>
+
+        <p class="desc" style="padding: 20px 0;">
+            From imperial cities to desert landscapes, discover the places,
+            flavors and traditions that make Morocco unforgettable.
+        </p>
+
+        <div class="explore-actions">
+            <a href="exploreMaroc-en.html" class="btn-primaryE">
+                Start exploring <span>→</span>
+            </a>
+
+            <a href="#" class="btn-secondaryG">
+                <span id="dsec-villes">↓</span> Browse the guide
+            </a>
+        </div>
+    </div>
+
+    <div class="explore-img">
+        <img src="images/morocco.png" alt="Discover Morocco">
+
+        <div class="small-cardM top-card">
+            <div class="pin">⌖</div>
+            <div>
+                <strong>Chefchaouen</strong>
+                <small>Morocco’s blue city</small>
+            </div>
+        </div>
+
+        <div class="small-cardM bottom-card">
+            <div class="pin">⌖</div>
+            <div>
+                <strong>Aït Ben Haddou</strong>
+                <small>Kasbah • UNESCO</small>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<div class="explore-subnav">
+    <a href="exploreMaroc-en.html" class="subnav active" onclick="showDTab('villes',this)">Cities &amp; Sites</a>
+    <a href="culture-en.html" class="subnav">Culture &amp; Customs</a>
+    <a href="guastronomie-en.html" class="subnav">Gastronomy</a>
+    <a href="quandPartir-en.html" class="subnav">When to go</a>
+</div>
+
+<section class="dsec active motion-section" id="dsec-villes">
+    <div class="cities-list">
+
+        <div class="city-flex">
+            <div class="city-num">01</div>
+            <div class="city-detail">
+                <div class="city-flex-head">
+                    <div>
+                        <div class="city-flex-region">Imperial city — Marrakech-Safi Region</div>
+                        <h3 class="city-flex-name">Marrakech</h3>
+                    </div>
+                </div>
+                <p class="desc-city">The Red City, former capital of Morocco. Its UNESCO-listed medina,
+                    Djemaa El-Fna square, maze-like souks, luxurious riads and historic palaces make it
+                    one of Morocco’s top travel destinations. Must-sees include Majorelle Garden,
+                    Bahia Palace and the artisan souks.</p>
+                <div class="city-pills">
+                    <span class="pill">Djemaa El-Fna</span>
+                    <span class="pill">Majorelle Garden</span>
+                    <span class="pill">UNESCO Medina</span>
+                    <span class="pill">Bahia Palace</span>
+                    <span class="pill">Souks</span>
+                </div>
+            </div>
+            <div class="city-img">
+                <img src="images/casablanca.png" alt="">
+            </div>
+        </div>
+
+        <div class="city-flex">
+            <div class="city-num">02</div>
+            <div class="city-detail">
+                <div class="city-flex-head">
+                    <div>
+                        <div class="city-flex-region">Imperial city — Fès-Meknès Region</div>
+                        <h3 class="city-flex-name">Fès</h3>
+                    </div>
+                </div>
+                <p class="desc-city">Morocco’s spiritual and cultural capital. Fès El-Bali is the world’s
+                    largest medieval car-free medina. The Chouara tanneries, Al-Qarawiyyin Mosque
+                    and University, madrasas and fondouks make it one of the most unique cities on earth.</p>
+                <div class="city-pills">
+                    <span class="pill">Chouara Tanneries</span>
+                    <span class="pill">Al-Qarawiyyin</span>
+                    <span class="pill">Medieval Medina</span>
+                    <span class="pill">Craftsmanship</span>
+                </div>
+            </div>
+            <div class="city-img">
+                <img src="images/fes 2.png" alt="">
+            </div>
+        </div>
+
+        <div class="city-flex">
+            <div class="city-num">03</div>
+            <div class="city-detail">
+                <div class="city-flex-head">
+                    <div>
+                        <div class="city-flex-region">Rif Mountains — Tangier-Tetouan Region</div>
+                        <h3 class="city-flex-name">Chefchaouen</h3>
+                    </div>
+                </div>
+                <p class="desc-city">The legendary Blue City, nestled in the Rif Mountains. Its alleys are
+                    painted in shades of blue and white. A peaceful escape ideal for hiking, photography
+                    and discovering local crafts, with a unique atmosphere far from the crowds of big cities.</p>
+                <div class="city-pills">
+                    <span class="pill">Blue alleys</span>
+                    <span class="pill">Hiking</span>
+                    <span class="pill">Rif Mountains</span>
+                    <span class="pill">Craftsmanship</span>
+                </div>
+            </div>
+            <div class="city-img">
+                <img src="images/chefchaouen 2.png" alt="">
+            </div>
+        </div>
+
+        <div class="city-flex">
+            <div class="city-num">04</div>
+            <div class="city-detail">
+                <div class="city-flex-head">
+                    <div>
+                        <div class="city-flex-region">Sahara Desert — Drâa-Tafilalet Region</div>
+                        <h3 class="city-flex-name">Merzouga &amp; Erg Chebbi</h3>
+                    </div>
+                </div>
+                <p class="desc-city">The golden dunes of Erg Chebbi rise up to 150 meters high — among the
+                    tallest in the Sahara. Spend a night in a Berber desert camp under the stars, ride a camel
+                    at sunset and watch the sunrise over the golden dunes. A timeless and unforgettable experience.</p>
+                <div class="city-pills">
+                    <span class="pill">Erg Chebbi</span>
+                    <span class="pill">Camel ride</span>
+                    <span class="pill">Desert camp</span>
+                    <span class="pill">Sunset</span>
+                </div>
+            </div>
+            <div class="city-img">
+                <img src="images/merzouga 2.png" alt="">
+            </div>
+        </div>
+
+        <div class="city-flex">
+            <div class="city-num">05</div>
+            <div class="city-detail">
+                <div class="city-flex-head">
+                    <div>
+                        <div class="city-flex-region">Atlantic Coast — Marrakech-Safi Region</div>
+                        <h3 class="city-flex-name">Essaouira</h3>
+                    </div>
+                </div>
+                <p class="desc-city">The City of Trade Winds — a historic fishing port with 16th-century
+                    Portuguese ramparts. Known worldwide for windsurfing and kitesurfing thanks to its steady winds,
+                    Essaouira offers a UNESCO-listed medina, art galleries, a hippie-chic atmosphere and the famous
+                    Gnaoua Festival every June.</p>
+                <div class="city-pills">
+                    <span class="pill">UNESCO Ramparts</span>
+                    <span class="pill">Kitesurfing</span>
+                    <span class="pill">Gnaoua Festival</span>
+                    <span class="pill">Thuya crafts</span>
+                </div>
+            </div>
+            <div class="city-img">
+                <img src="images/essouira 2.png" alt="">
+            </div>
+        </div>
+
+        <div class="city-flex">
+            <div class="city-num">06</div>
+            <div class="city-detail">
+                <div class="city-flex-head">
+                    <div>
+                        <div class="city-flex-region">Gateway to the desert — Drâa-Tafilalet Region</div>
+                        <h3 class="city-flex-name">Ouarzazate</h3>
+                    </div>
+                </div>
+                <p class="desc-city">Known as the “Hollywood of Africa”, Ouarzazate is home to some of the
+                    largest film studios in Africa — Gladiator, Lawrence of Arabia and Game of Thrones were filmed here.
+                    It is also the perfect gateway to Aït Ben Haddou, the Drâa Valley and southern Morocco’s kasbahs.</p>
+                <div class="city-pills">
+                    <span class="pill">Film studios</span>
+                    <span class="pill">Aït Ben Haddou</span>
+                    <span class="pill">Kasbahs</span>
+                    <span class="pill">Drâa Valley</span>
+                </div>
+            </div>
+            <div class="city-img">
+                <img src="images/Ouarzazate.png" alt="">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="gastro-cta motion-section">
+    <div class="cta-container">
+
+        <div class="cta-label">
+            <span></span>
+            <p>READY TO FIND THE PERFECT TIME?</p>
+            <span></span>
+        </div>
+
+        <h2>
+            Choose your ideal season, from spring in the Atlas Mountains to the soft lights of Moroccan winter.
+        </h2>
+
+        <a href="reserver-en.html" class="cta-btn">
+            Plan my trip
+            <span>→</span>
+        </a>
+
+    </div>
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-col footer-brand">
+        <div class="footer-logo">
+            <img src="images/azul.png" width="75px" height="75px" alt="azulVoyage">
+        </div>
+        <span class="footer-label">Your partner for discovering Morocco differently.</span>
+        <p class="footer-label">Premium Moroccan tours & transport.</p>
+        <div class="note-tag small">Your adventure starts here</div>
+    </div>
+
+    <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+            <li><a href="exploreMaroc-en.html">Discover Morocco</a></li>
+            <li><a href="transport-en.html">Transport</a></li>
+            <li><a href="package-en.html">Tours & Packages</a></li>
+            <li><a href="contact-en.html">About</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+            <li><a href="#">Airport Transfer</a></li>
+            <li><a href="#">Private Driver</a></li>
+            <li><a href="#">Desert Tours</a></li>
+            <li><a href="#">Bookings</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Seasonal routes & offers.</p>
+        <form action="https://formspree.io/f/{form_id}" method="post" class="newsletter-form">
+            <input type="email" placeholder="your@email">
+            <button class="button">Join</button>
+        </form>
+        <div class="social-icons">
+            <a href="#"><i class="ti ti-brand-instagram"></i></a>
+            <a href="#"><i class="ti ti-brand-facebook"></i></a>
+            <a href="#"><i class="ti ti-brand-youtube"></i></a>
+            <a href="#"><i class="ti ti-brand-linkedin"></i></a>
+        </div>
+    </div>
+
+    <div class="action">
+
+        <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+            <symbol id="icon-arrow-up-hand" viewBox="0 0 512 512">
+                <g fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M214 384
+           L214 184
+           L164 184
+           L256 80
+           L348 184
+           L298 184
+           L298 384
+           Q298 402 284 408
+           L236 416
+           Q220 414 214 384 Z" />
+
+                    <path d="M228 408 L242 434" />
+                    <path d="M258 406 L270 430" />
+                    <path d="M286 404 L296 424" />
+
+                    <path d="M186 210 L174 186" />
+                    <path d="M206 210 L196 186" />
+                    <path d="M224 210 L216 186" />
+
+                    <path d="M308 210 L320 190" />
+                    <path d="M326 210 L336 196" />
+                    <path d="M340 210 L346 200" />
+                </g>
+            </symbol>
+        </svg>
+
+        <a href="#top" class="float-btn whatsapp"><svg class="arrow-icon">
+                <use href="#icon-arrow-up-hand"></use>
+            </svg>
+        </a>
+
+        <a href="#" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="50px" height="50px"
+                class="float-btn whatsapp whtsp-color"></a>
+
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".testSwiper", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: { slidesPerView: 1 },
+                700: { slidesPerView: 2 },
+                1000: { slidesPerView: 3 }
+            }
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menuToggle");
+            const navLinks = document.getElementById("navLinks");
+
+            if (!menuToggle || !navLinks) return;
+
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+                menuToggle.classList.toggle("active");
+            });
+
+            navLinks.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    navLinks.classList.remove("active");
+                    menuToggle.classList.remove("active");
+                });
+            });
+        });
+    </script>
+
+
+
+    <script type="module" src="motion-animations.js"></script>
+    <script src="loader.js"></script>
+    <script src="script.js" defer></script>
+
+
+</body>
+
+</html>

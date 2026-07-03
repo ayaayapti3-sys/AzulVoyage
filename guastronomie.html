@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azul Voyage</title>
+    <link rel="icon" href="images/azul.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-logo">
+            <a href="index.html" class="logo"><img src="images/azul.png" width="55px" height="55px"
+                    alt="azulVoyage"></a>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" data-i18n="nav.home">Accueil</a>
+            <a href="exploreMaroc.html" data-i18n="nav.explore">Découvrir le Maroc</a>
+            <a href="transport.html" data-i18n="nav.transport">Transport</a>
+            <a href="package.html" data-i18n="nav.packages">Tours & Packages</a>
+            <a href="contact.html" data-i18n="nav.about">À propos</a>
+        </nav>
+
+        <a href="reserver.html" class="nav-btn" data-i18n="nav.book">Réserver</a>
+
+             <button class="lang-toggle" id="langToggle">
+            EN
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <section class="exploreMaroc motion-section">
+
+        <div class="explore-content">
+            <span class="explore-label" data-i18n="explore.label">Découvrir le Maroc</span>
+
+            <h1 data-i18n="explore.title">
+                Explorez le
+                Maroc
+                Autrement
+            </h1>
+
+            <p class="desc" style="padding: 20px 0;" data-i18n="explore.desc">
+                Des villes impériales aux paysages désertiques, découvrez les lieux,
+                les saveurs et les traditions qui rendent le Maroc inoubliable.
+            </p>
+         <div class="explore-actions">
+                <a href="#subnav" class="btn-primaryE" data-i18n="explore.btn_start">
+                    Commencer l'exploration ↓
+                </a>
+
+                <a href="package.html" class="btn-secondaryG" data-i18n="explore.btn_guide">
+                    →   Découvrir nos circuits
+                </a>
+            </div>
+        </div>
+
+        <div class="explore-img">
+            <img src="images/morocco.png" alt="Découvrir le Maroc">
+
+            <div class="small-cardM top-card">
+                <div class="pin">⌖</div>
+                <div>
+                    <strong>Chefchaouen</strong>
+                    <small data-i18n="explore.card_chef">Ville bleue du Maroc</small>
+                </div>
+            </div>
+
+            <div class="small-cardM bottom-card">
+                <div class="pin">⌖</div>
+                <div>
+                    <strong>Aït Ben Haddou</strong>
+                    <small>Kasbah • UNESCO</small>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="explore-subnav">
+        <a href="exploreMaroc.html" class="subnav active" onclick="showDTab('villes',this)" data-i18n="explore.subnav_villes">Villes &amp; Sites</a>
+        <a href="culture.html" class="subnav" onclick="showDTab('culture',this)" data-i18n="explore.subnav_culture">Culture &amp; Coutumes</a>
+        <a href="guastronomie.html" class="subnav" data-i18n="explore.subnav_gastro">Gastronomie</a>
+        <a href="quandPartir.html" class="subnav" data-i18n="explore.subnav_quand">Quand partir</a>
+    </div>
+
+    <section class="gastro-hero motion-section" id="gastronomie">
+        <div class="gastro-container">
+
+            <div class="gastro-label">
+                <span></span>
+                <p data-i18n="gastro.label">GASTRONOMIE · MAROC</p>
+                <span></span>
+            </div>
+
+            <h1 class="goutTitle" data-i18n="gastro.title">Goûter le Maroc</h1>
+
+            <p class="gastro-desc" data-i18n="gastro.desc">
+                Un voyage ne se raconte pas seulement avec les yeux. Au Maroc,
+                il se goûte — dans la vapeur d'un tajine, le sucre d'un thé versé de
+                haut, le parfum d'un souk d'épices. Voici l'itinéraire des saveurs.
+            </p>
+
+            <div class="gastro-actions">
+
+                <a href="#plats" class="btn btn-outline-orange" data-i18n="gastro.btn_plats">
+                    Voir les plats
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cuisine-voyage motion-section">
+        <div class="cuisine-box">
+
+            <div class="cuisine-label">
+                <span></span>
+                <p data-i18n="gastro.cuisine_label">LA CUISINE COMME UN VOYAGE</p>
+            </div>
+
+            <h2 data-i18n="gastro.cuisine_title">
+                Ici, manger n'est pas une étape
+                du séjour — c'est le séjour. Chaque
+                région a sa table, chaque famille
+                sa recette, chaque heure son rituel.
+            </h2>
+
+            <div class="cuisine-features">
+
+                <div class="cuisine-feature">
+                    <div class="feature-line"></div>
+
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M8.5 14.5A4.5 4.5 0 0 0 13 19a4.5 4.5 0 0 0 4.5-4.5c0-3.5-3-5.5-3-9.5-3 2-6 5-6 9.5Z">
+                                </path>
+                                <path d="M9 14c0 2 1.5 3 3 3"></path>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3 data-i18n="gastro.feat1_title">Le feu lent</h3>
+                            <p data-i18n="gastro.feat1_desc">Tajines et tangias mijotés des heures.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cuisine-feature">
+                    <div class="feature-line"></div>
+
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z">
+                                </path>
+                                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3 data-i18n="gastro.feat2_title">Les épices</h3>
+                            <p data-i18n="gastro.feat2_desc">Safran, cumin, cannelle, ras el-hanout.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cuisine-feature">
+                    <div class="feature-line"></div>
+
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3 data-i18n="gastro.feat3_title">Le partage</h3>
+                            <p data-i18n="gastro.feat3_desc">Un plat unique, au centre, pour tous.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="plats-section motion-section" id="plats">
+        <div class="plats-header">
+            <div class="plats-label">
+                <span></span>
+                <p data-i18n="gastro.plats_label">LES PLATS À NE PAS MANQUER</p>
+            </div>
+
+            <div class="plats-title-row">
+                <h2 data-i18n="gastro.plats_title">
+                    Quatre tables qui
+                    racontent le pays
+                </h2>
+            </div>
+        </div>
+
+        <div class="plats-flex">
+
+            <div class="plat-card">
+                <div class="plat-image">
+                    <div class="photo-placeholder">
+                        <img src="images/tagine.png" alt="tagine">
+                    </div>
+                </div>
+
+                <div class="plat-content">
+                    <div class="plat-name">
+                        <h3>Tajine</h3>
+                        <span data-i18n="gastro.tajine_region">TOUT LE PAYS</span>
+                    </div>
+
+                    <p data-i18n="gastro.tajine_desc">
+                        Le plat-emblème, mijoté des heures dans son cône de terre :
+                        poulet citron-olive, agneau aux pruneaux, légumes de saison.
+                    </p>
+                </div>
+            </div>
+
+            <div class="plat-card plat-down">
+                <div class="plat-image">
+
+                    <div class="photo-placeholder">
+                        <img src="images/couscous.png" alt="">
+
+                    </div>
+                </div>
+
+                <div class="plat-content">
+                    <div class="plat-name">
+                        <h3>Couscous</h3>
+                        <span data-i18n="gastro.couscous_region">LE VENDREDI</span>
+                    </div>
+
+                    <p data-i18n="gastro.couscous_desc">
+                        La semoule roulée à la main, le bouillon safrané, les légumes
+                        empilés — le repas de partage par excellence.
+                    </p>
+                </div>
+            </div>
+
+            <div class="plat-card">
+                <div class="plat-image">
+                    <span class="plat-number">03</span>
+
+                    <div class="photo-placeholder">
+                        <img src="images/pastella.png" alt="">
+
+                    </div>
+                </div>
+
+                <div class="plat-content">
+                    <div class="plat-name">
+                        <h3>Pastilla</h3>
+                        <span>FÈS</span>
+                    </div>
+
+                    <p data-i18n="gastro.pastilla_desc">
+                        Le feuilleté sucré-salé des grandes occasions : pigeon ou
+                        poulet, amandes torréfiées, cannelle et sucre glace.
+                    </p>
+                </div>
+            </div>
+
+            <div class="plat-card plat-down">
+                <div class="plat-image">
+
+
+                    <div class="photo-placeholder">
+                        <img src="images/harira.png" alt="">
+                    </div>
+                </div>
+
+                <div class="plat-content">
+                    <div class="plat-name">
+                        <h3>Harira</h3>
+                        <span>RAMADAN</span>
+                    </div>
+
+                    <p data-i18n="gastro.harira_desc">
+                        La soupe qui ouvre le ftour : tomate, lentilles, pois chiches
+                        et fines herbes, servie avec dattes et chebakia.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+  
+
+
+
+    <section class="gastro-cta motion-section">
+        <div class="cta-container">
+
+            <div class="cta-label">
+                <span></span>
+                <p data-i18n="gastro_cta.label">PRÊT À GOÛTER LE MAROC ?</p>
+                <span></span>
+            </div>
+
+            <h2 data-i18n="gastro_cta.title">
+                Composez votre itinéraire
+                autour des saveurs, du grand
+                sud aux médinas du nord.
+            </h2>
+
+            <a href="reserver.html" class="cta-btn" data-i18n="cta.btn">
+                Planifier mon voyage →
+            </a>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-col footer-brand">
+            <div class="footer-logo">
+                <img src="images/azul.png" width="75px" height="75px" alt="azulVoyage">
+            </div>
+            <span class="footer-label" data-i18n="footer.slogan">Votre partenaire pour découvrir le Maroc autrement.</span>
+            <p class="footer-label" data-i18n="footer.desc">Tours & transport marocain premium.</p>
+            <div class="note-tag small" data-i18n="footer.note">Votre aventure commence ici</div>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-i18n="footer.explore_title">Explorer</h4>
+            <ul>
+                <li><a href="exploreMaroc.html" data-i18n="footer.explore_maroc">Découvrir le Maroc</a></li>
+                <li><a href="transport.html" data-i18n="footer.explore_transport">Transport</a></li>
+                <li><a href="package.html" data-i18n="footer.explore_packages">Tours & Packages</a></li>
+                <li><a href="contact.html" data-i18n="footer.explore_about">À propos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-i18n="footer.services_title">Services</h4>
+            <ul>
+                <li><a href="#" data-i18n="footer.services_airport">Transfert Aéroport</a></li>
+                <li><a href="#" data-i18n="footer.services_driver">Chauffeur Privé</a></li>
+                <li><a href="#" data-i18n="footer.services_desert">Tours Désert</a></li>
+                <li><a href="#" data-i18n="footer.services_booking">Réservations</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+            <h4 data-i18n="footer.newsletter_title">Newsletter</h4>
+            <p data-i18n="footer.newsletter_desc">Routes saisonnières & offres.</p>
+            <form action="https://formspree.io/f/{form_id}" method="post" class="newsletter-form">
+                <input type="email" placeholder="votre@email" data-i18n-placeholder="footer.newsletter_placeholder">
+                <button class="button" data-i18n="footer.newsletter_btn">Rejoindre</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"><i class="ti ti-brand-instagram"></i></a>
+                <a href="#"><i class="ti ti-brand-facebook"></i></a>
+                <a href="#"><i class="ti ti-brand-youtube"></i></a>
+                <a href="#"><i class="ti ti-brand-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="action">
+
+
+            <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+                <symbol id="icon-arrow-up-hand" viewBox="0 0 512 512">
+                    <g fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M214 384
+               L214 184
+               L164 184
+               L256 80
+               L348 184
+               L298 184
+               L298 384
+               Q298 402 284 408
+               L236 416
+               Q220 414 214 384 Z" />
+                        <path d="M228 408 L242 434" />
+                        <path d="M258 406 L270 430" />
+                        <path d="M286 404 L296 424" />
+                        <path d="M186 210 L174 186" />
+                        <path d="M206 210 L196 186" />
+                        <path d="M224 210 L216 186" />
+                        <path d="M308 210 L320 190" />
+                        <path d="M326 210 L336 196" />
+                        <path d="M340 210 L346 200" />
+                    </g>
+                </symbol>
+            </svg>
+            <a href="#top" class="float-btn whatsapp"><svg class="arrow-icon">
+                    <use href="#icon-arrow-up-hand"></use>
+                </svg>
+            </a>
+
+            <a href="#" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="50px" height="50px"
+                    class="float-btn whatsapp whtsp-color"></a>
+
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menuToggle");
+            const navLinks = document.getElementById("navLinks");
+
+            if (!menuToggle || !navLinks) return;
+
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+                menuToggle.classList.toggle("active");
+            });
+
+            navLinks.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    navLinks.classList.remove("active");
+                    menuToggle.classList.remove("active");
+                });
+            });
+        });
+    </script>
+
+
+
+    <script src="script.js" defer></script>
+    <script type="module" src="motion-animations.js"></script>
+    <script src="js/i18n.js" defer></script>
+
+</body>
+
+</html>
