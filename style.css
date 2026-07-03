@@ -1721,7 +1721,7 @@ html {
     display: flex;
     justify-content: space-between !important;
     align-items: center;
-    gap: 300px;
+    gap: 30px;
 }
 
 .when-note {
